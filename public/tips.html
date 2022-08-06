@@ -13,13 +13,34 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
   <!--add the Google Material Symbols Font (from https://fonts.google.com/icons ) -->
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <style type="text/css">
 
+    .scrolling-wrapper {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      column-gap:5px;
+    }
+    div.scroll {
+      background-color: #fed9ff;
+      width: 600px;
+      height: 150px;
+      overflow-x: hidden;
+      overflow-y: auto;
+      text-align: center;
+      padding: 20px;
+  }
 
+  </style>
   </head>
 
   <body>
-    
+    <dic class="scroll">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+      Lorem Ipsum 
+    </dic>
     
 
   </body>
