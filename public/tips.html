@@ -18,12 +18,13 @@
 
     .scrolling-wrapper {
       display: flex;
-      flex-wrap: nowrap;
-      overflow-x: auto;
+      /* flex-wrap: nowrap; */
+      overflow-y: scroll;
       -webkit-overflow-scrolling: touch;
-      column-gap:5px;
+      /* column-gap:5px; */
     }
-    div.scroll {
+    /* div.scroll {
+      display: flex;
       background-color: #fed9ff;
       width: 600px;
       height: 150px;
@@ -31,15 +32,21 @@
       overflow-y: auto;
       text-align: center;
       padding: 20px;
-  }
+  } */
+    .foodtips {
+      display: flex;
+      align-items: center;
+    }
 
   </style>
   </head>
 
   <body>
-    <dic class="scroll">
-       
-    </dic>
+    <div class="scrolling-wrapper">
+       <div class="foodtips">
+        <h2>Food Tips</h2>
+       </div>
+    </div>
     
 
   </body>
