@@ -42,6 +42,9 @@ app.get('/scan', function (req, res) {
 app.get('/tips', function (req, res) {
   res.sendFile(publicPath + '/tips.html');
 });
+app.get('/groceries', function (req, res) {
+  res.sendFile(publicPath + '/groceries.html');
+});
 app.get('/wishlist', function (req, res) {
   res.sendFile(publicPath + '/wishlist.html');
 });
