@@ -21,14 +21,15 @@
       flex-direction: column;
     }
     .scrolling-wrapper {
-      display: flex;
-      flex-direction: column;
-      /* min-height: 100vh;
-      flex-wrap: nowrap;
+      /* display: flex;
+      flex-direction: column; */
+      min-height: 100vh;
       overflow-y: scroll;
+      -webkit-overflow-scrolling: touch;
+      /* flex-wrap: nowrap; 
       max-width: 100%;
       overflow-x: hidden;
-      -webkit-overflow-scrolling: touch; */
+      */
       background-color: pink;
     }
     .scrolling-wrapper > * {
