@@ -11,3 +11,31 @@ body {
   background-color: #fffaf2;
   font-family: 'Mulish', sans-serif;
 }
+
+.navbar {
+  width: 92vw;
+  background-color: #273f3a;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-radius: 10vh;
+  display: flex;
+  align-items: center;
+  bottom: 3vh;
+  height: 7vh;
+}
+
+.nav-icons {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.nav-icons img {
+  height: 5vh;
+}
+
+.nav-icons img:hover {
+  fill: #ffe2b6;
+}
