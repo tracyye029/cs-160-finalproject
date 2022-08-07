@@ -1,15 +1,21 @@
+.body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
 .main-container {
   display: flex;
   flex-direction: column;
-  width: 90vw;
   height: 100vh;
   align-items: center;
-  justify-content: center;
 }
 
 h1 {
   color: #404240;
-  font-size: 32px;
+  font-size: 5rem;
+  font-weight: 800;
 }
 
 .top-header {
@@ -17,22 +23,222 @@ h1 {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-top: 80px;
+  margin-top: 15%;
+  width: 90vw;
 }
 
 .top-header img {
-  height: 24px;
+  height: 4rem;
 }
 
 .add-receipt-btn {
   display: flex;
   flex-direction: row;
   padding: 10px;
-  border-radius: 100%;
+  border-radius: 50px;
   justify-content: space-evenly;
   background-color: #4d8145;
   color: white;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 14;
   margin: 20px;
+  gap: 10px;
+}
+
+.banner {
+  width: 90vw;
+  border-radius: 10px;
+  background-color: #e59262;
+  color: white;
+  display: flex;
+  height: 15vh;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.banner-focus {
+  font-size: 36px;
+  font-weight: 800;
+}
+
+.banner-text span {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.banner-text {
+  margin: 15px;
+}
+
+.banner img {
+  height: 15vh;
+}
+
+.groceries-container {
+  margin-bottom: 15px;
+  width: 90vw;
+}
+
+.groceries-cards-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  width: 100%;
+  gap: 10px;
+}
+
+.groceries-header {
+  display: flex;
+  margin-bottom: 10px;
+  gap: 10px;
+  height: fit-content;
+  align-items: center;
+}
+
+.home-small-header {
+  color: #404240;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.groceries-count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  padding: 10px;
+  background-color: #404240;
+  font-weight: 800;
+  font-size: 14px;
+  border-radius: 50px;
+  color: white;
+}
+
+.groceries-header a,
+a:visited,
+a:focus,
+a:hover {
+  color: #638061;
+  font-weight: 200;
+  font-size: 13px;
+}
+
+.grocery-card {
+  border-radius: 10px;
+  background-color: #dce8af;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 5px;
+  height: 15vh;
+  width: 15vh;
+  flex: 0 0 auto;
+}
+
+.food-img-container img {
+  padding: 5px;
+  height: 50px;
+}
+
+.food-img-container {
+  border-radius: 50px;
+  width: 50px;
+  background-color: #c7db78;
+}
+
+.home-md-header {
+  color: #273f3a;
+  font-weight: 800;
+  color: 20px;
+}
+
+.expiry-details {
+  font-size: 11px;
+  font-weight: 300;
+}
+
+.expiry-date {
+  font-weight: 500;
+}
+
+.expiry-details svg {
+  height: 11px;
+  width: 11px;
+}
+
+.expiry-red {
+  color: #ad0000;
+}
+
+.expiry-red circle {
+  fill: #ad0000;
+}
+
+.expiry-orange {
+  color: #bb542a;
+}
+
+.expiry-orange circle {
+  fill: #bb542a;
+}
+
+.expiry-green {
+  color: #4d8145;
+}
+
+.expiry-green circle {
+  fill: #4d8145;
+}
+
+.wishlist-card {
+  border-radius: 10px;
+  background: #fdd775;
+  height: 8vh;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 5px;
+}
+
+.wishlist-week {
+  font-weight: 600;
+  font-size: 11px;
+  color: #273f3a;
+}
+
+.wishlist-detail {
+  font-weight: 400;
+  font-size: 11px;
+  color: #a67700;
+}
+
+.navbar {
+  width: 92vw;
+  background-color: #273f3a;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  bottom: 2vh;
+  height: 5vh;
+}
+
+.nav-icons {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.nav-icons img {
+  height: width;
+}
+
+.nav-icons img:hover {
+  fill: #ffe2b6;
 }
