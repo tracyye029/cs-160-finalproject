@@ -14,7 +14,7 @@
 
 h1 {
   color: #404240;
-  font-size: 5rem;
+  font-size: 4.5rem;
   font-weight: 800;
 }
 
@@ -34,49 +34,58 @@ h1 {
 .add-receipt-btn {
   display: flex;
   flex-direction: row;
-  padding: 10px;
-  border-radius: 50px;
+  padding: 1rem 2.5rem 1rem 2.5rem;
+  border-radius: 3rem;
   justify-content: space-evenly;
   background-color: #4d8145;
   color: white;
-  font-weight: 500;
-  font-size: 14;
+  font-weight: medium;
+  font-size: 2.2rem;
   margin: 20px;
-  gap: 10px;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.add-receipt-btn img {
+  height: 0.9em;
 }
 
 .banner {
   width: 90vw;
-  border-radius: 10px;
+  border-radius: 1.5rem;
   background-color: #e59262;
   color: white;
   display: flex;
-  height: 15vh;
+  height: 18vh;
   display: flex;
   justify-content: space-around;
-  margin-bottom: 20px;
+  margin-bottom: 3em;
 }
 
 .banner-focus {
-  font-size: 36px;
+  font-size: 4.5vh;
   font-weight: 800;
 }
 
 .banner-text span {
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 120%;
 }
 
 .banner-text {
-  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 3vh;
 }
 
 .banner img {
-  height: 15vh;
+  height: 18vh;
 }
 
 .groceries-container {
-  margin-bottom: 15px;
+  margin-bottom: 3em;
   width: 90vw;
 }
 
@@ -86,13 +95,13 @@ h1 {
   flex-wrap: nowrap;
   overflow-x: auto;
   width: 100%;
-  gap: 10px;
+  gap: 2em;
 }
 
 .groceries-header {
   display: flex;
-  margin-bottom: 10px;
-  gap: 10px;
+  margin-bottom: 1.2em;
+  gap: 1.2em;
   height: fit-content;
   align-items: center;
 }
@@ -100,20 +109,20 @@ h1 {
 .home-small-header {
   color: #404240;
   font-weight: 800;
-  font-size: 18px;
+  font-size: 2.5em;
 }
 
 .groceries-count {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 30px;
-  width: 30px;
-  padding: 10px;
+  height: 2em;
+  width: 2em;
+  padding: 1em;
   background-color: #404240;
-  font-weight: 800;
-  font-size: 14px;
-  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1.5em;
+  border-radius: 3em;
   color: white;
 }
 
@@ -123,41 +132,45 @@ a:focus,
 a:hover {
   color: #638061;
   font-weight: 200;
-  font-size: 13px;
+  font-size: 2rem;
 }
 
 .grocery-card {
-  border-radius: 10px;
+  border-radius: 1.5rem;
   background-color: #dce8af;
   display: flex;
   flex-direction: column;
-  gap: 5px;
-  padding: 5px;
-  height: 15vh;
-  width: 15vh;
+  gap: 0.2rem;
+  padding: 2rem;
+  height: 18vh;
+  width: 18vh;
   flex: 0 0 auto;
+  justify-content: space-evenly;
 }
 
 .food-img-container img {
-  padding: 5px;
-  height: 50px;
+  padding: 1rem;
+  height: 10rem;
 }
 
 .food-img-container {
-  border-radius: 50px;
-  width: 50px;
+  border-radius: 12rem;
+  width: 10rem;
   background-color: #c7db78;
 }
 
 .home-md-header {
   color: #273f3a;
   font-weight: 800;
-  color: 20px;
+  font-size: 2.7em;
 }
 
 .expiry-details {
-  font-size: 11px;
+  font-size: 1.5vh;
   font-weight: 300;
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
 }
 
 .expiry-date {
@@ -165,8 +178,8 @@ a:hover {
 }
 
 .expiry-details svg {
-  height: 11px;
-  width: 11px;
+  height: 0.8em;
+  width: 0.8em;
 }
 
 .expiry-red {
@@ -193,25 +206,43 @@ a:hover {
   fill: #4d8145;
 }
 
-.wishlist-card {
-  border-radius: 10px;
-  background: #fdd775;
-  height: 8vh;
+.wishlist-container {
+  margin-bottom: 4em;
+  width: 90vw;
+  overflow: hidden;
+}
+
+.wishlist-card-container {
   display: flex;
   flex-direction: column;
-  gap: 5px;
-  padding: 5px;
+  flex-wrap: nowrap;
+  overflow-y: scroll;
+  gap: 2em;
+  padding-bottom: 8em;
+  width: 100%;
+  height: 28vh;
+}
+
+.wishlist-card {
+  border-radius: 1.5rem;
+  background: #fdd775;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1em;
+  flex: 0 0 auto;
 }
 
 .wishlist-week {
   font-weight: 600;
-  font-size: 11px;
+  font-size: 1.8em;
   color: #273f3a;
 }
 
 .wishlist-detail {
   font-weight: 400;
-  font-size: 11px;
+  font-size: 1.5em;
   color: #a67700;
 }
 
@@ -221,11 +252,11 @@ a:hover {
   position: fixed;
   left: 50%;
   transform: translate(-50%, 0);
-  border-radius: 50px;
+  border-radius: 10vh;
   display: flex;
   align-items: center;
-  bottom: 2vh;
-  height: 5vh;
+  bottom: 3vh;
+  height: 7vh;
 }
 
 .nav-icons {
@@ -236,7 +267,7 @@ a:hover {
 }
 
 .nav-icons img {
-  height: width;
+  height: 5vh;
 }
 
 .nav-icons img:hover {
