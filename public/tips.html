@@ -84,20 +84,28 @@
     color: white;
     text-align: center;
     padding: 25px 40px 25px 40px;
-    font-family: 'Mulish';
   }
   .twoimage {
     display:flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     position: relative;
-    width:85%;
+    /* width:85%; */
     padding-top: 10px;
     padding-bottom: 10px;
-    /* background-color: #cc704B; */
+    background-color: #cc704B;
   }
-
+  .textblock1 {
+    position: absolute;
+    left: 0;
+    top: 220px;
+    bottom: 0;
+    background-color: #436240;
+    color: white;
+    text-align: center;
+    padding: 25px 40px 25px 40px;
+  }
   </style>
       <link rel="stylesheet" type="text/css" href="/css/style.css" />
   </head>
@@ -124,8 +132,15 @@
 
       <div class="first-article">
         <div class="twoimage">
-          <img src="/img/foodtips/grocery1.jpg" width="390px" height="400px" style="object-fit:cover; object-position:left bottom;">
-          <img src="/img/foodtips/grocery2.jpg" width="390px" height="400px" style="object-fit:cover; object-position:left bottom;">
+          <div class="image">
+            <img src="/img/foodtips/grocery1.jpg" width="390px" height="400px" style="object-fit:cover; object-position:left bottom;">
+          </div>
+          <div class="image">
+            <img src="/img/foodtips/grocery2.jpg" width="390px" height="400px" style="object-fit:cover; object-position:left bottom;">
+          </div>
+          <div class="text-block1">
+            some text
+          </div>
         </div>
       </div>
     
