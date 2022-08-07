@@ -1,0 +1,40 @@
+body {
+  background-color: #fffaf2;
+}
+
+.top-bar img {
+  height: 3vh;
+}
+
+.top-bar {
+  height: 8vh;
+  width: 100vw;
+  background-color: #222928;
+  display: flex;
+  align-items: center;
+  padding-left: 2em;
+}
+
+.bottom-bar {
+  height: 20vh;
+  width: 100vw;
+  background-color: #222928;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+img.camera-icon {
+  position: fixed;
+  bottom: 7.5vh;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 7.5vh;
+}
+
+img.image-gallery {
+  position: fixed;
+  bottom: 7.5vh;
+  left: 10vw;
+  width: 6vh;
+}
