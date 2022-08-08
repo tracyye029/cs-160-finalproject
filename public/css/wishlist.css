@@ -1,0 +1,226 @@
+.add-item-btn {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem 2.5rem 1rem 2.5rem;
+  border-radius: 3rem;
+  justify-content: space-evenly;
+  background-color: #4d8145;
+  color: white;
+  font-weight: medium;
+  font-size: 2.2rem;
+  margin-bottom: 2em;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.add-item-btn img {
+  height: 0.9em;
+}
+
+.body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  color: #404240;
+  font-size: 4.5rem;
+  font-weight: 800;
+}
+
+.top-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15%;
+  width: 90vw;
+}
+
+.groceries-nav {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem 1vh 1rem 1vh;
+  border-radius: 8vh;
+  justify-content: space-between;
+  background-color: #fdd775;
+  font-weight: bolder;
+  font-size: 2.2rem;
+  margin: 1em;
+  align-items: center;
+  height: 8vh;
+  width: 90vw;
+}
+
+.groceries-btn {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem 2.5rem 1rem 2.5rem;
+  border-radius: 8vh;
+  justify-content: space-evenly;
+  background-color: #fdd775;
+  color: #273f3a;
+  font-weight: medium;
+  font-size: 2.2rem;
+  align-items: center;
+  height: 6vh;
+  width: 44vw;
+}
+
+.wishlist-btn {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem 2.5rem 1rem 2.5rem;
+  border-radius: 8vh;
+  justify-content: space-evenly;
+  background-color: #a67700;
+  color: white;
+  font-weight: medium;
+  font-size: 2.2rem;
+  align-items: center;
+  height: 6vh;
+  width: 44vw;
+}
+
+.suggestions-container {
+  width: 90vw;
+}
+
+.suggestions-header {
+  display: flex;
+  margin-bottom: 1.2em;
+  gap: 1.2em;
+  height: fit-content;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.clear-btn {
+  color: white;
+  background-color: #e8c07d;
+  padding: 0.25em 0.75em 0.25em 0.75em;
+  border-radius: 2em;
+  font-size: 1.5em;
+}
+
+.suggestions-header-text {
+  display: flex;
+  gap: 1.2em;
+  height: fit-content;
+  align-items: center;
+}
+
+.suggestions-header img {
+  height: 2.5em;
+}
+
+.groceries-small-header {
+  color: #404240;
+  font-weight: 800;
+  font-size: 2.5em;
+}
+
+.food-img-container img {
+  padding: 1rem;
+  height: 10rem;
+}
+
+.food-img-container {
+  border-radius: 12rem;
+  width: 10rem;
+  background-color: #f1c247;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.groceries-md-header {
+  color: #273f3a;
+  font-weight: 800;
+  font-size: 2.7em;
+}
+
+.grocery-list-detail {
+  font-size: 2.2em;
+  color: #404240;
+  width: 55vw;
+  line-height: 110%;
+}
+
+.wishlist-container {
+  margin-bottom: 4em;
+  width: 90vw;
+  overflow: scroll;
+}
+
+.grocery-list-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  overflow-y: scroll;
+  padding-bottom: 8em;
+  width: 100%;
+  height: fit-content;
+}
+
+.grocery-list-card {
+  border-radius: 1.5rem;
+  background: #fdd775;
+  height: 12vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2rem 1em 2rem 1em;
+  flex: 0 0 auto;
+  margin-bottom: 2em;
+}
+
+.grocery-list-card .groceries-md-header {
+  color: #404240;
+}
+
+.groceries-header {
+  display: flex;
+  margin-bottom: 1.2em;
+  gap: 1.2em;
+  height: fit-content;
+  align-items: center;
+}
+
+.home-small-header {
+  color: #404240;
+  font-weight: 800;
+  font-size: 2.5em;
+}
+
+.groceries-count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2em;
+  width: 2em;
+  padding: 1em;
+  background-color: #404240;
+  font-weight: 600;
+  font-size: 1.5em;
+  border-radius: 3em;
+  color: white;
+}
+
+.groceries-header a,
+a:visited,
+a:focus,
+a:hover {
+  color: #638061;
+  font-weight: 200;
+  font-size: 2rem;
+}
