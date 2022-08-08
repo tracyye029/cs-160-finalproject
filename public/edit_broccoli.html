@@ -95,7 +95,7 @@
       background: #dce8af;
       height: 10vh;
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: flex-start;
       align-items: center;
       padding: 2rem 1em 2rem 1em;
@@ -108,7 +108,7 @@
       background: #dce8af;
       height: 23vh;
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: flex-start;
       align-items: center;
       padding: 2rem 1em 2rem 1em;
@@ -118,7 +118,7 @@
     .use-status {
       border-radius: 1.5rem;
       background: #dce8af;
-      height: 5vh;
+      height: 7vh;
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
@@ -137,6 +137,13 @@
       padding-bottom: 8em;
       height: fit-content;
       width:100%;
+    }
+    .small-text {
+      font-size:20px;
+    }
+    .large-text {
+      font-size:40px;
+      font-weight: 900;
     }
     </style>
   </head>
@@ -158,9 +165,18 @@
         <div class="edit-save-button">Edit</div>
       </div>
       <div class="card-container">
-        <div class="dates-card"></div>
-        <div class="dates-card"></div>
-        <div class="notes-card"></div>
+        <div class="dates-card">
+          <div class="small-text">Purchase Date</div>
+          <div class="large-text">August 1, 2022</div>
+        </div>
+        <div class="dates-card">
+          <div class="small-text">Predicted Expiration Date</div>
+          <div class="large-text">August 6, 2022</div>
+        </div>
+        <div class="notes-card">
+          <div class="small-text">Notes</div>
+          <div class="large-text">trees & forests</div>
+        </div>
         <div class="use-status"></div>
       </div>
       
