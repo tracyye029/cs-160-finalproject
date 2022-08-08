@@ -93,7 +93,7 @@
 
     .dates-card {
       border-radius: 1.5rem;
-      
+      background: #dce8af;
       height: 10vh;
       display: flex;
       flex-direction: column;
@@ -103,15 +103,10 @@
       flex: 0 0 auto;
       margin-bottom: 2em;
     }
-    .dates-card .first {
-      background: #dce8af;
-    }
 
-    .dates-card .second {
-      background:#9CAC9C;
-    }
     .notes-card {
       border-radius: 1.5rem;
+      background: #dce8af;
       height: 23vh;
       display: flex;
       flex-direction: column;
@@ -121,13 +116,9 @@
       flex: 0 0 auto;
       margin-bottom: 2em;
     }
-    .notes-card .first{
-      background: #dce8af;
-    }
-    .notes-card .second{
-      background:#9CAC9C;
-    }
+
     .use-status {
+      background: #dce8af;
       border-radius: 1.5rem;
       height: 7vh;
       display: flex;
@@ -138,13 +129,8 @@
       flex: 0 0 auto;
       margin-bottom: 2em;
     }
-    .use-status .first{
-      background: #dce8af;
-    }
-    .use-status .second{
-      background:#9CAC9C;
-    }
-    .card-container-1 {
+
+    .card-container {
       display: flex;
       flex-direction: column;
       flex-wrap: nowrap;
@@ -154,17 +140,7 @@
       height: fit-content;
       width:100%;
     }
-    .card-container-2 {
-      
-      display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
-      padding-left:70px;
-      padding-right:70px;
-      padding-bottom: 8em;
-      height: fit-content;
-      width:100%;
-    }
+
     .small-text {
       font-size:20px;
       font-weight:lighter;
@@ -212,46 +188,26 @@
         <div class="edit-save-button">Edit</div>
       </div>
 
-      <div class="card-container-1">
-        <div class="dates-card first">
+      <div class="card-container">
+        <div class="dates-card">
           <div class="small-text">Purchase Date</div>
           <div class="large-text">August 1, 2022</div>
         </div>
-        <div class="dates-card first">
+        <div class="dates-card">
           <div class="small-text">Predicted Expiration Date</div>
           <div class="large-text">August 6, 2022</div>
         </div>
-        <div class="notes-card first">
+        <div class="notes-card">
           <div class="small-text">Notes</div>
           <div class="large-text">trees & forests</div>
         </div>
-        <div class="use-status first">
-          <div class="active-use-status">Not Used</div>
-          <div class="inactive-use-status">Used</div>
-        </div>
-      </div>
-      
-      <div class="card-container-2">
-        <div class="dates-card second">
-          <div class="small-text">Purchase Date</div>
-          <div class="large-text">August 1, 2022</div>
-        </div>
-        <div class="dates-card second">
-          <div class="small-text">Predicted Expiration Date</div>
-          <div class="large-text">August 6, 2022</div>
-        </div>
-        <div class="notes-card second">
-          <div class="small-text">Notes</div>
-          <div class="large-text">trees & forests</div>
-        </div>
-        <div class="use-status second">
+        <div class="use-status">
           <div class="active-use-status">Not Used</div>
           <div class="inactive-use-status">Used</div>
         </div>
       </div>
 
 
-      
     </div>
     <div class="groceries navbar">
       <div class="nav-icons">
@@ -262,14 +218,7 @@
       </div>
     </div>
 
-    <script>
-      $(document).ready(function () {
-        $(".card-container-2").hide();
-        $(".edit-save-button").on("click", function(){
-            $(".card-container-1, .card-container-2").toggle();
-        });
-      });
-    </script>
+    <script></script>
   </body>
 
   
