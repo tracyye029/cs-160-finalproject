@@ -16,15 +16,20 @@
     <link rel="stylesheet" type="text/css" href="/css/style.css" />
 
     <style type="text/css">
+    .body {
+      margin:0;
+    }
     .flex-container {
       display: flex;
       flex-direction: column;
       flex-wrap: nowrap;
       overflow-x: hidden;
+      overflow-y: hidden;
       justify-content: space-between;
       align-items: center;
       background-color: pink;
-      flex-grow:1;
+      height: 100vh;
+      box-sizing: border-box;
     }
     .header {
       width:100%;
