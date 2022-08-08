@@ -155,6 +155,7 @@
       width:100%;
     }
     .card-container-2 {
+      
       display: flex;
       flex-direction: column;
       flex-wrap: nowrap;
@@ -263,9 +264,9 @@
 
     <script>
       $(document).ready(function () {
-      $(".edit-save-button").click(function () {
-          $(".card-container-1").hide();
-          $(".card-container-2").show();
+        $(".card-container-2").hide();
+        $(".edit-save-button").on("click", function(){
+            $(".card-container-1, .card-container-2").toggle();
         });
       });
     </script>
