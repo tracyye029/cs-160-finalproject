@@ -1,0 +1,235 @@
+.body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+}
+
+h1 {
+  color: #404240;
+  font-size: 4.5rem;
+  font-weight: 800;
+}
+
+.top-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15%;
+  width: 90vw;
+}
+
+.groceries-nav {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem 1vh 1rem 1vh;
+  border-radius: 8vh;
+  justify-content: space-between;
+  background-color: #dce8af;
+  font-weight: bolder;
+  font-size: 2.2rem;
+  margin: 1em;
+  align-items: center;
+  height: 8vh;
+  width: 90vw;
+}
+
+.groceries-btn {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem 2.5rem 1rem 2.5rem;
+  border-radius: 8vh;
+  justify-content: space-evenly;
+  background-color: #273f3a;
+  color: white;
+  font-weight: medium;
+  font-size: 2.2rem;
+  align-items: center;
+  height: 6vh;
+  width: 44vw;
+}
+
+.wishlist-btn {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem 2.5rem 1rem 2.5rem;
+  border-radius: 8vh;
+  justify-content: space-evenly;
+  background-color: #dce8af;
+  color: #273f3a;
+  font-weight: medium;
+  font-size: 2.2rem;
+  align-items: center;
+  height: 6vh;
+  width: 44vw;
+}
+
+.reminder-container {
+  margin-bottom: 3em;
+  width: 90vw;
+}
+
+.reminder-header {
+  display: flex;
+  margin-bottom: 1.2em;
+  gap: 1.2em;
+  height: fit-content;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.clear-btn {
+  color: white;
+  background-color: #e8c07d;
+  padding: 0.25em 0.75em 0.25em 0.75em;
+  border-radius: 2em;
+  font-size: 1.5em;
+}
+
+.reminder-header-text {
+  display: flex;
+  gap: 1.2em;
+  height: fit-content;
+  align-items: center;
+}
+
+.reminder-header img {
+  height: 2.5em;
+}
+
+.groceries-small-header {
+  color: #404240;
+  font-weight: 800;
+  font-size: 2.5em;
+}
+
+.food-img-container img {
+  padding: 1rem;
+  height: 10rem;
+}
+
+.food-img-container {
+  border-radius: 12rem;
+  width: 10rem;
+  background-color: #c7db78;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.groceries-md-header {
+  color: #273f3a;
+  font-weight: 800;
+  font-size: 2.7em;
+}
+
+.grocery-list-detail {
+  font-size: 2.2em;
+  color: #404240;
+  width: 55vw;
+}
+
+.wishlist-container {
+  margin-bottom: 4em;
+  width: 90vw;
+  overflow: hidden;
+}
+
+.grocery-list-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  overflow-y: scroll;
+  gap: 2em;
+  padding-bottom: 8em;
+  width: 100%;
+  height: 50vh;
+}
+
+.grocery-list-card {
+  border-radius: 1.5rem;
+  background: #dce8af;
+  height: 12vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2rem 1em 2rem 1em;
+  flex: 0 0 auto;
+}
+
+.grocery-list-card .groceries-md-header {
+  color: #404240;
+}
+
+.groceries-header {
+  width: 90vw;
+  display: flex;
+  justify-content: left;
+  gap: 3em;
+  margin-bottom: 1em;
+}
+
+.groceries-header div {
+  width: 20vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5em;
+  font-size: 2em;
+  font-weight: 600;
+  color: white;
+  height: 2.5em;
+  gap: 0.5em;
+}
+
+.groceries-header svg {
+  height: 1.5em;
+  stroke: white;
+}
+
+.filter-btn {
+  background-color: #e4b22f;
+}
+
+.sort-btn {
+  background-color: #cc704b;
+}
+
+#custom-input .form-check {
+  display: flex;
+  align-items: center;
+  padding-right: 2.5%;
+  border-radius: 3em;
+}
+
+#custom-input .form-check-input {
+  border-radius: 100px;
+  width: 3em;
+  height: 3em;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -o-appearance: none;
+  background-color: white;
+  outline: 0.25em solid #689760;
+}
+
+#custom-input .form-check-input:checked {
+  background-color: #689760;
+  border-color: #689760;
+}
+
+#custom-input input[type='checkbox'] {
+  border-radius: 5rem;
+}
+
+input[type='checkbox']:checked:before {
+  color: white !important;
+}
