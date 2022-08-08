@@ -23,15 +23,34 @@
         overflow-x: hidden;
         /* background-color: pink; */
     }
-
-
+    .header {
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .back-icon {
+      position: absolute;
+      top:63px;
+      left:60px;
+    }
 
 
     </style>
   </head>
 
-  <body>
+  <body style="font-family: 'Mulish'; background-color: #FFFAF2;">
     <div class="flex-container">
+        <div class="header">
+            <div class="back-icon">
+                <svg width="17" height="25" viewBox="0 0 17 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.40732 12.498L15.5129 4.07726C15.9163 3.73845 16.1689 3.25361 16.2156 2.72891C16.2622 2.20421 16.099 1.6824 15.7617 1.27777C15.4245 0.873131 14.9406 0.618642 14.416 0.570026C13.8915 0.521411 13.3691 0.682633 12.9632 1.01839L1.02305 10.9686C0.799158 11.1556 0.619067 11.3895 0.495489 11.6538C0.371912 11.9181 0.307861 12.2063 0.307861 12.498C0.307861 12.7898 0.371912 13.0779 0.495489 13.3422C0.619067 13.6065 0.799158 13.8404 1.02305 14.0275L12.9632 23.9776C13.3689 24.315 13.892 24.4775 14.4174 24.4295C14.9429 24.3815 15.4278 24.1268 15.7657 23.7215C16.1035 23.3162 16.2667 22.7933 16.2193 22.2678C16.1719 21.7423 15.9178 21.257 15.5129 20.9187L5.40732 12.498Z" fill="white"/>
+                    </svg>
+            </div>
+            <div class="title">Your Groceries</div>
+            
+        </div>
+
 
     </div>
 
