@@ -15,6 +15,14 @@
   <!--add the Google Material Symbols Font (from https://fonts.google.com/icons ) -->
   <link href='https://fonts.googleapis.com/css?family=Mulish' rel='stylesheet'>
   <style type="text/css">
+    .flex-container {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      overflow-x: hidden;
+      position:relative;
+      /* background-color: pink; */
+    }
     .header-img {
       width: 100%;
       height: 600px;
@@ -55,26 +63,29 @@
   </head>
 
   <body style="font-family: 'Mulish'; background-color: #436240; position:relative;">
-    <div class="header-img">
-      <div class="back-icon">
-        <svg viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" width="60px" height="60px"><path d="m39.376 48.002 30.47-25.39a6.003 6.003 0 0 0-7.688-9.223L26.156 43.391a6.01 6.01 0 0 0 0 9.223l36.002 30.001a6.003 6.003 0 0 0 7.688-9.223Z" fill="#ffffff" class="fill-000000"></path></svg>
+    <div class="flex-container">
+      <div class="header-img">
+        <div class="back-icon">
+          <svg viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" width="60px" height="60px"><path d="m39.376 48.002 30.47-25.39a6.003 6.003 0 0 0-7.688-9.223L26.156 43.391a6.01 6.01 0 0 0 0 9.223l36.002 30.001a6.003 6.003 0 0 0 7.688-9.223Z" fill="#ffffff" class="fill-000000"></path></svg>
+        </div>
+        
+        <div class="title">
+          <h1 style="font-size:60px; color:white;">Reducing Food Waste: Eight Tips for Home Cooks</h1>
+        </div>
+  
+        <div class="share-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="60px" height="60px" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-share"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path><polyline points="16 6 12 2 8 6"></polyline><line x1="12" y1="2" x2="12" y2="15"></line></svg>
+        </div>
       </div>
-      
-      <div class="title">
-        <h1 style="font-size:60px; color:white;">Reducing Food Waste: Eight Tips for Home Cooks</h1>
+  
+      <div class="stack-top">
+        <p>Whether you’ve always been the family chef or are just learning to perfect your meal planning and cooking now while stuck at home, making your food go as far as possible can be a source of solace during this difficult time. With the stay-at-home measures in response to COVID-19—and with many of us tightening our budgets—there has been a renewed focus on creative, 
+          cost-effective home cooking. Right now, millions of people are out of work. Many of these people are shopping with restricted budgets or facing food insecurity for the first time and are trying to find ways to make their food go further. For some, cooking can be a way to reduce stress, find peace, and connect more closely with family and friends through shared recipes.
+          Though the unsettling news articles showing empty shelves at the grocery store and exceptionally long lines at food pantries illuminate the uncertainty of this time, there’s no need to panic shop. It is true that the COVID crisis has disrupted food supply chains, but buying more than you need only exacerbates the problem. It also contributes to food waste, a major 
+          contributor to climate change. The Federal Emergency Management Agency (FEMA) recommends you buy only what you need until your next shopping trip. That advice, plus these simple tips to make that food stay good as long as possible, should help uplift your time in the kitchen.
+        </p>
       </div>
 
-      <div class="share-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" width="60px" height="60px" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-share"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path><polyline points="16 6 12 2 8 6"></polyline><line x1="12" y1="2" x2="12" y2="15"></line></svg>
-      </div>
-    </div>
-
-    <div class="stack-top">
-      <p>Whether you’ve always been the family chef or are just learning to perfect your meal planning and cooking now while stuck at home, making your food go as far as possible can be a source of solace during this difficult time. With the stay-at-home measures in response to COVID-19—and with many of us tightening our budgets—there has been a renewed focus on creative, 
-        cost-effective home cooking. Right now, millions of people are out of work. Many of these people are shopping with restricted budgets or facing food insecurity for the first time and are trying to find ways to make their food go further. For some, cooking can be a way to reduce stress, find peace, and connect more closely with family and friends through shared recipes.
-        Though the unsettling news articles showing empty shelves at the grocery store and exceptionally long lines at food pantries illuminate the uncertainty of this time, there’s no need to panic shop. It is true that the COVID crisis has disrupted food supply chains, but buying more than you need only exacerbates the problem. It also contributes to food waste, a major 
-        contributor to climate change. The Federal Emergency Management Agency (FEMA) recommends you buy only what you need until your next shopping trip. That advice, plus these simple tips to make that food stay good as long as possible, should help uplift your time in the kitchen.
-      </p>
     </div>
   </body>
 
