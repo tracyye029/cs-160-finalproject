@@ -16,20 +16,14 @@
     <link rel="stylesheet" type="text/css" href="/css/style.css" />
 
     <style type="text/css">
-    .body {
-      margin:0;
-    }
     .flex-container {
       display: flex;
       flex-direction: column;
       flex-wrap: nowrap;
       overflow-x: hidden;
-      overflow-y: hidden;
       justify-content: space-between;
       align-items: center;
-      background-color: pink;
-      height: 100vh;
-      box-sizing: border-box;
+      /* background-color: pink; */
     }
     .header {
       width:100%;
@@ -99,7 +93,7 @@
 
     .dates-card {
       border-radius: 1.5rem;
-      background: #dce8af;
+      
       height: 10vh;
       display: flex;
       flex-direction: column;
@@ -109,10 +103,15 @@
       flex: 0 0 auto;
       margin-bottom: 2em;
     }
+    .dates-card .first {
+      background: #dce8af;
+    }
 
+    .dates-card .second {
+      background:#9CAC9C;
+    }
     .notes-card {
       border-radius: 1.5rem;
-      background: #dce8af;
       height: 23vh;
       display: flex;
       flex-direction: column;
@@ -122,9 +121,14 @@
       flex: 0 0 auto;
       margin-bottom: 2em;
     }
+    .notes-card .first{
+      background: #dce8af;
+    }
+    .notes-card .second{
+      background:#9CAC9C;
+    }
     .use-status {
       border-radius: 1.5rem;
-      background: #dce8af;
       height: 7vh;
       display: flex;
       flex-direction: row;
@@ -134,8 +138,13 @@
       flex: 0 0 auto;
       margin-bottom: 2em;
     }
-
-    .card-container {
+    .use-status .first{
+      background: #dce8af;
+    }
+    .use-status .second{
+      background:#9CAC9C;
+    }
+    .card-container-1 {
       display: flex;
       flex-direction: column;
       flex-wrap: nowrap;
@@ -191,26 +200,46 @@
         <div class="broccoli-name">Broccoli</div>
         <div class="edit-save-button">Edit</div>
       </div>
-      <div class="card-container">
-        <div class="dates-card">
+
+      <div class="card-container-1">
+        <div class="dates-card first">
           <div class="small-text">Purchase Date</div>
           <div class="large-text">August 1, 2022</div>
         </div>
-        <div class="dates-card">
+        <div class="dates-card first">
           <div class="small-text">Predicted Expiration Date</div>
           <div class="large-text">August 6, 2022</div>
         </div>
-        <div class="notes-card">
+        <div class="notes-card first">
           <div class="small-text">Notes</div>
           <div class="large-text">trees & forests</div>
         </div>
-        <div class="use-status">
+        <div class="use-status first">
           <div class="active-use-status">Not Used</div>
           <div class="inactive-use-status">Used</div>
         </div>
-        </div>
       </div>
       
+      <div class="card-container-2">
+        <div class="dates-card second">
+          <div class="small-text">Purchase Date</div>
+          <div class="large-text">August 1, 2022</div>
+        </div>
+        <div class="dates-card second">
+          <div class="small-text">Predicted Expiration Date</div>
+          <div class="large-text">August 6, 2022</div>
+        </div>
+        <div class="notes-card second">
+          <div class="small-text">Notes</div>
+          <div class="large-text">trees & forests</div>
+        </div>
+        <div class="use-status second">
+          <div class="active-use-status">Not Used</div>
+          <div class="inactive-use-status">Used</div>
+        </div>
+      </div>
+
+
       
     </div>
     <div class="groceries navbar">
@@ -223,8 +252,12 @@
     </div>
 
     <script>
-
-    
+      $(document).ready(function () {
+      $(".edit-save-button").click(function () {
+          $(".card-container-1").hide();
+          $(".card-container-2").show();
+        });
+      });
     </script>
   </body>
 
