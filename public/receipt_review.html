@@ -24,7 +24,7 @@
     <!-- add jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="/css/style.css" />
-    <link rel="stylesheet" type="text/css" href="/css/groceries.css" />
+    <link rel="stylesheet" type="text/css" href="/css/review_receipt.css" />
 
     <!--add the Google Material Symbols Font (from https://fonts.google.com/icons ) -->
     <link
@@ -35,273 +35,53 @@
 
   <body>
     <div class="main-container">
-      <div class="top-header">
-        <div class="groceries-small-header">Your Groceries</div>
-      </div>
-      <div class="groceries-nav">
-        <div class="groceries-btn">Current Groceries</div>
-        <div class="wishlist-btn">Groceries Wishlist</div>
-      </div>
-      <div class="reminder-container">
-        <div class="reminder-header">
-          <div class="reminder-header-text">
-            <div class="groceries-small-header">Reminders</div>
-            <img src="img/ui_icons/gear_icon.svg" />
-          </div>
-          <div as="button" class="clear-btn">Clear All</div>
+        <div class="top-header">
+            <div class="back-icon">
+                <a href="/receipt_scan.html">
+                    <img src="/img/ui_icons/rescan.png" width="170vw">
+                </a>
+            </div>
+            <div class="header">Review Receipt</div>
+            <div class="sub-header">Purchased August 11, 2022</div>
         </div>
-        <div class="grocery-list-card" style="background-color: #e59262">
-          <div class="food-img-container">
-            <img src="img/food_icons/broccoli.png" />
-          </div>
-          <div class="grocery-list-text">
-            <div class="groceries-md-header" style="color: white">Reminder</div>
-            <div class="grocery-list-detail" style="color: white">
-              Your broccoli is expiring tomorrow!
+    
+        <br><br><br><br><br><br>
+
+        <div class="receipt-container">
+            <div class="grocery-list-card">
+                <div class="food-img-container">
+                    <img src="img/food_icons/broccoli.png" />
+                </div>
+                <div class="grocery-list-text">
+                    <div class="groceries-md-header">Bread</div>
+                    <div class="grocery-list-detail">Expiring next week</div>
+                </div>
+                <div class="edit-img-container" style="margin-right:6vw;">
+                    <a href="/receipt_rewview_edit_bread.html">
+                        <img src="img/ui_icons/pencil.png" width="100%"/>
+                    </a>
+                </div>
             </div>
-          </div>
+            <div class="grocery-list-card">
+                <div class="food-img-container">
+                    <img src="img/food_icons/fish.png" />
+                </div>
+                <div class="grocery-list-text">
+                    <div class="groceries-md-header">Fresh Fish</div>
+                    <div class="grocery-list-detail">Expiring next week</div>
+                </div>
+                <div class="edit-img-container" style="margin-right:6vw;">
+                    <a href="/receipt_review_edit_fish.html">
+                        <img src="img/ui_icons/pencil.png" width="100%"/>
+                    </a>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="wishlist-container">
-        <div class="groceries-header">
-          <div as="button" class="sort-btn">
-            Sort
-            <svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
-              <rect fill="none" stroke="none" height="256" width="256" />
-              <polyline
-                points="144 168 184 208 224 168"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="24"
-                fill="none"
-              />
-              <line
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="24"
-                x1="184"
-                x2="184"
-                y1="112"
-                y2="208"
-              />
-              <line
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="24"
-                x1="48"
-                x2="120"
-                y1="128"
-                y2="128"
-              />
-              <line
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="24"
-                x1="48"
-                x2="184"
-                y1="64"
-                y2="64"
-              />
-              <line
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="24"
-                x1="48"
-                x2="104"
-                y1="192"
-                y2="192"
-              />
-            </svg>
-          </div>
-          <div as="button" class="filter-btn">
-            Filter
-            <?xml version="1.0" ?><svg
-              viewBox="0 0 256 256"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect fill="none" stroke="none" height="256" width="256" />
-              <line
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="24"
-                x1="148"
-                x2="40"
-                y1="172"
-                y2="172"
-              />
-              <line
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="24"
-                x1="216"
-                x2="188"
-                y1="172"
-                y2="172"
-              />
-              <circle
-                cx="168"
-                cy="172"
-                r="20"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="24"
-              />
-              <line
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="24"
-                x1="84"
-                x2="40"
-                y1="84"
-                y2="84"
-              />
-              <line
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="24"
-                x1="216"
-                x2="124"
-                y1="84"
-                y2="84"
-              />
-              <circle
-                cx="104"
-                cy="84"
-                r="20"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="24"
-              />
-            </svg>
-          </div>
-        </div>
-        <div class="grocery-list-container">
-          <div class="grocery-list-card">
-            <div class="food-img-container">
-              <img src="img/food_icons/broccoli.png" />
-            </div>
-            <div class="grocery-list-text">
-              <div class="groceries-md-header">Broccoli</div>
-              <div class="grocery-list-detail">Expiring tomorrow</div>
-            </div>
-            <div id="custom-input">
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  checked
-                />
-              </div>
-            </div>
-          </div>
-          <div class="grocery-list-card">
-            <div class="food-img-container">
-              <img src="img/food_icons/milk.png" />
-            </div>
-            <div class="grocery-list-text">
-              <div class="groceries-md-header">Milk</div>
-              <div class="grocery-list-detail">Expiring in 3 days</div>
-            </div>
-            <div id="custom-input">
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  checked
-                />
-              </div>
-            </div>
-          </div>
-          <div class="grocery-list-card">
-            <div class="food-img-container">
-              <img src="img/food_icons/apple.png" />
-            </div>
-            <div class="grocery-list-text">
-              <div class="groceries-md-header">Apples</div>
-              <div class="grocery-list-detail">Expiring in 5 days</div>
-            </div>
-            <div id="custom-input">
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  checked
-                />
-              </div>
-            </div>
-          </div>
-          <div class="grocery-list-card">
-            <div class="food-img-container">
-              <img src="img/food_icons/eggs.png" />
-            </div>
-            <div class="grocery-list-text">
-              <div class="groceries-md-header">Eggs</div>
-              <div class="grocery-list-detail">Expiring next week</div>
-            </div>
-            <div id="custom-input">
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  checked
-                />
-              </div>
-            </div>
-          </div>
-          <div class="grocery-list-card">
-            <div class="food-img-container">
-              <img src="img/food_icons/bread.png" />
-            </div>
-            <div class="grocery-list-text">
-              <div class="groceries-md-header">Bread</div>
-              <div class="grocery-list-detail">Expiring next week</div>
-            </div>
-            <div id="custom-input">
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  checked
-                />
-              </div>
-            </div>
-          </div>
-          <div class="grocery-list-card">
-            <div class="food-img-container">
-              <img src="img/food_icons/fish.png" />
-            </div>
-            <div class="grocery-list-text">
-              <div class="groceries-md-header">Fish</div>
-              <div class="grocery-list-detail">Expiring next week</div>
-            </div>
-            <div id="custom-input">
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  checked
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="groceries navbar">
-        <div class="nav-icons">
-          <img src="img/ui_icons/home.svg" />
-          <img src="img/ui_icons/groceries_active.svg" />
-          <img src="img/ui_icons/scan.svg" />
-          <img src="img/ui_icons/tips.svg" />
-        </div>
-      </div>
+    </div>
+
+    <div class="options">
+        <button onclick="location.href='/home.html'" class="option-button-delete">Delete Receipt</button>
+        <button onclick="location.href='/groceries_updated.html'" class="option-button-add">Add To My Groceries</button>
     </div>
   </body>
 </html>
