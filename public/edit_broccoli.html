@@ -227,8 +227,8 @@
           <textarea class="large-text-area" cols="40">10% off</textarea>
         </div>
         <div class="use-status">
-          <div class="active-use-status">Not Used</div>
-          <div class="inactive-use-status">Used</div>
+          <div class="active-use-status" id="notused">Not Used</div>
+          <div class="inactive-use-status" id="used">Used</div>
         </div>
         <div class="delete-item">
           <a href="/delete_broccoli.html">
@@ -242,9 +242,9 @@
 
     <script type="text/javascript">
       $(document).ready(function() {
-          $(".inactive-use-status").click(function() {
-              $(".inactive-use-status").removeClass('inactive-use-status');
-              $(".inactive-use-status").addClass("active-use-status");
+          $("#notused").click(function() {
+              $("#notused").removeClass('inactive-use-status');
+              $("#notused").addClass("active-use-status");
               // $("inactive-use-status").addClass("active-use-status");
           });
       });
