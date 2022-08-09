@@ -55,6 +55,7 @@ h1 {
   align-items: center;
   height: 6vh;
   width: 44vw;
+  border: 0;
 }
 
 .wishlist-btn {
@@ -70,6 +71,7 @@ h1 {
   align-items: center;
   height: 6vh;
   width: 44vw;
+  border: 0;
 }
 
 .reminder-container {
