@@ -99,9 +99,26 @@
       text-align:left;
       padding-bottom:20px;
     }
+    .input-quantity {
+      border-radius: 40px;
+      background: #F0F2E5;
+      height: 5vh;
+      width:20%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 1.5rem 1em;
+      flex: 0 0 auto;
+      /* margin-bottom: 2em; */
+      font-size:33px;
+      color: #40424089;
+      font-weight:lighter;
+      border:solid #9CAC9C;
+    }
     .quantity-field {
       display:flex;
       flex-direction:row;
+
     }
 
     </style>
@@ -125,7 +142,7 @@
         <div class="quantity">Quantity</div>
         <div class="quantity-field">
           <div id="minus">−</div>
-          <input type="number" value="0" id="input"/>
+          <input type="number" value="0" class="input-quantity"/>
           <div id="plus">+</div>
         </div>
         
