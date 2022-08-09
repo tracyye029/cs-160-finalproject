@@ -1,9 +1,8 @@
 .delete-or-update {
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
-  margin-bottom: 6vh;
-  height: fit-content;
+  align-items: bottom;
+  height: 500px;
 }
 .delete {
   background-color:#9D1D1D;
