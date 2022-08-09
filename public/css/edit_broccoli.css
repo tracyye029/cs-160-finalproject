@@ -3,6 +3,7 @@
     flex-direction: column;
     flex-wrap: nowrap;
     overflow-x: hidden;
+    overflow-y: hidden;
     justify-content: space-between;
     align-items: center;
     /* background-color: pink; */
