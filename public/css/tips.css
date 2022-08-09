@@ -117,7 +117,8 @@
     border-bottom-left-radius:25px;
     border-bottom-right-radius:25px;
   }
-  .white-gear  {
+
+  #white-gear  {
     position:absolute;
     margin-top:1px;
   }
