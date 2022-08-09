@@ -22,8 +22,7 @@
   }
   #button1 { 
      background-color:#cc704B;
-     padding-top:12px;
-     padding-bottom:12px;
+     padding-top:15px;
      padding-left: 30px;
      padding-right: 60px;
      color: white;
@@ -121,8 +120,8 @@
   }
   #white-gear {
     position:absolute;
-    top:14px;
-    right:27px;
+    top:20px;
+    right:40px;
   }
   /* .active-reminder-text {
     display:flex;
