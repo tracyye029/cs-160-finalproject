@@ -35,7 +35,7 @@
      align-items: center;
      justify-content: space-evenly;
      text-align: center;
-     width:fit-content;
+     width:100%;
      position:relative;
   }
   .first-article {
