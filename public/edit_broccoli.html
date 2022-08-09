@@ -243,8 +243,8 @@
     <script type="text/javascript">
       $(document).ready(function() {
           $(".inactive-use-status").click(function() {
-              $(".inactive-use-status").hide();
-              $(".active-use-status").hide();
+              $(".inactive-use-status").removeClass('inactive-use-status');
+              $("this").addClass("active-use-status");
               // $("inactive-use-status").addClass("active-use-status");
           });
       });
