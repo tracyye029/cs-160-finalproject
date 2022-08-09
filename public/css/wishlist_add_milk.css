@@ -11,10 +11,5 @@
     margin-bottom: 2em;
 }
 
-.grocery-list-text {
-    display:flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-}
+
 
