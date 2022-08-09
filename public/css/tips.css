@@ -117,7 +117,13 @@
     border-bottom-left-radius:25px;
     border-bottom-right-radius:25px;
   }
+  .active-reminder-text {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
 
+  }
   #white-gear  {
     position:absolute;
     top:5px;
