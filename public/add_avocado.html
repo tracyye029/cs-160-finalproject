@@ -239,9 +239,9 @@
       <div class="desirable-date-section">
         <div class="desirable-date-title">Desirable Date</div>
         <div class="desirable-date-options">
-            <div class="active-date">This Week</div>
-            <div class="inactive-date">Next Week</div>
-            <div class="inactive-date">Later On</div>
+            <div class="active-date" id="#thisweek">This Week</div>
+            <div class="inactive-date" id="nextweek">Next Week</div>
+            <div class="inactive-date" id="lateron">Later On</div>
         </div>
       </div>
       
@@ -266,6 +266,33 @@
             const currentValue = Number(inputQuantity.value) || 0;
             inputQuantity.value = currentValue + 1;
         });
+
+        $(document).ready(function() {
+          $("#nextweek").click(function() {
+            $("#nextweek").removeClass('inactive-date');
+            $("#nextweek").addClass("active-date");
+            $("#thisweek").removeClass('active-date');
+            $("#thisweek").addClass("inactive-date");
+            $("#lateron").removeClass('active-date');
+            $("#lateron").addClass("inactive-date");
+          });
+          $("#thisweek").click(function() {
+            $("#thisweek").removeClass('inactive-date');
+            $("#thisweek").addClass("active-date");
+            $("#nextweek").removeClass('active-date');
+            $("#nextweek").addClass("inactive-date");
+            $("#lateron").removeClass('active-date');
+            $("#lateron").addClass("inactive-date");
+          });
+          $("#lateron").click(function() {
+            $("#lateron").removeClass('inactive-date');
+            $("#lateron").addClass("active-date");
+            $("#nextweek").removeClass('active-date');
+            $("#nextweek").addClass("inactive-date");
+            $("#thisweek").removeClass('active-date');
+            $("#thisweek").addClass("inactive-date");
+          });
+      });
     </script>
   </body>
 
