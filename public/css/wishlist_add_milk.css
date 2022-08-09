@@ -1,0 +1,12 @@
+#edit-carrot {
+    border-radius: 1.5rem;
+    background: #fdd775;
+    height: 12vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2rem 1em 2rem 1em;
+    flex: 0 0 auto;
+    margin-bottom: 2em;
+}
