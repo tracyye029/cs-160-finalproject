@@ -39,11 +39,9 @@
         <h1>Hello, Heather</h1>
         <a href="/setting.html"><img src="img/ui_icons/gear_icon.svg"/></a>
       </div>
-      <a href="/receipt.html">
-        <button class="add-receipt-btn" href="/receipt.html">
-          <img src="img/ui_icons/add.svg" /> Add a new receipt
-        </button>
-      </a>
+      <button onclick="location.href='/receipt.html'" class="add-receipt-btn" href="/receipt.html" style="border: 0">
+        <img src="img/ui_icons/add.svg" /> Add a new receipt
+      </button>
       <div class="banner-carousel">
         <div class="banner">
           <div class="banner-text">
@@ -62,7 +60,7 @@
           <a href="/groceries">See all</a>
         </div>
         <div class="groceries-cards-container">
-          <div class="grocery-card">
+          <button class="grocery-card" onclick="location.href='/edit_broccoli.html'" style="border: 0">
             <div class="food-img-container">
               <img src="img/food_icons/broccoli.png" />
             </div>
@@ -73,8 +71,8 @@
               </svg>
               Expires on <span class="expiry-date">Aug 6</span>
             </div>
-          </div>
-          <div class="grocery-card">
+          </button>
+          <button class="grocery-card" onclick="location.href='/edit_broccoli.html'" style="border: 0">
             <div class="food-img-container">
               <img src="img/food_icons/milk.png" />
             </div>
@@ -85,8 +83,8 @@
               </svg>
               Expires on <span class="expiry-date">Aug 8</span>
             </div>
-          </div>
-          <div class="grocery-card">
+          </button>
+          <button class="grocery-card" onclick="location.href='/edit_broccoli.html'" style="border: 0">
             <div class="food-img-container">
               <img src="img/food_icons/apple.png" />
             </div>
@@ -97,8 +95,8 @@
               </svg>
               Expires on <span class="expiry-date">Aug 10</span>
             </div>
-          </div>
-          <div class="grocery-card">
+          </button>
+          <button class="grocery-card" onclick="location.href='/edit_broccoli.html'" style="border: 0">
             <div class="food-img-container">
               <img src="img/food_icons/eggs.png" />
             </div>
@@ -109,7 +107,7 @@
               </svg>
               Expires on <span class="expiry-date">Aug 13</span>
             </div>
-          </div>
+          </button>
         </div>
       </div>
       <div class="wishlist-container">
