@@ -204,7 +204,21 @@
       color:#273F3A;
       font-size:30px;
       font-weight:800;
-    
+    }
+    .add-to-wishlist {
+      width: 92vw;
+      background-color: #273f3a;
+      position: fixed;
+      left: 50%;
+      transform: translate(-50%, 0);
+      border-radius: 10vh;
+      display: flex;
+      align-items: center;
+      bottom: 3vh;
+      height: 7vh;
+      color: rgb(255, 255, 249);
+      font-size:30px;
+      font-weight:800;
     }
     </style>
   </head>
@@ -246,12 +260,13 @@
         </div>
       </div>
       
+      <div class="add-to-wishlist">
+        Add to My Wishlist
+      </div>
 
     </div>
 
     <script type="text/javascript">
-        
-
         $(document).ready(function() {
           const minusButton = document.getElementById('minus');
           const plusButton = document.getElementById('plus');
@@ -270,7 +285,6 @@
             const currentValue = Number(inputQuantity.value) || 0;
             inputQuantity.value = currentValue + 1;
           });
-
 
           $("#nextweek").click(function() {
             $("#nextweek").removeClass('inactive-date');
