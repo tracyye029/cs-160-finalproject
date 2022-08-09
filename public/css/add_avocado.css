@@ -172,7 +172,7 @@
     background-color:#273F3A;
     border: none;
     padding: 15px 30px;  
-    color: rgb(255, 255, 249);
+    color: #FFFAF2;
     display: inline-block;
     margin: 4px 2px;
     font-size:30px;
@@ -186,7 +186,7 @@
   }
   .add-to-wishlist {
     width: 77vw;
-    background-color: #273f3a;
+    background-color: #273F3A;
     position: fixed;
     left: 50%;
     transform: translate(-50%, 0);
@@ -196,7 +196,7 @@
     align-items: center;
     bottom: 6vh;
     height: 5vh;
-    color: rgb(255, 255, 249);
+    color: #FFFAF2;
     font-size:30px;
     font-weight:800;
   }
