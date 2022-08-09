@@ -21,24 +21,48 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
     <link rel="stylesheet" type="text/css" href="/css/scan.css" />
+
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+          
+      .basket {
+        width: 20vw;
+        height: 20vh;
+        animation: bounce 0.5s;
+        animation-direction: alternate;
+        animation-timing-function: cubic-bezier(.5, 0.05, 1, .5);
+        animation-iteration-count: infinite;
+      }
+    
+      @keyframes bounce {
+        from {
+          transform: translate3d(0, 0, 0);
+        }
+        to {
+          transform: translate3d(0, 200px, 0);
+        }
+      }
+    </style>
   </head>
 
   <body>
-    <div class="top-bar">
-      <img as="button" src="img/ui_icons/back.svg" />
+    <div class="container">
+      <div class="basket">
+        <img src="img/graphics/food.png" height="40%"/>
+      </div>
+      <h2 style="font-family:'Mulish', sans-serif; font-weight: bold; font-size:35px;">Processing Your Photo...</h2>
     </div>
 
-    <div class="bottom-bar">
-      <img
-        as="button"
-        class="image-gallery"
-        src="img/ui_icons/image_gallery.svg"
-      />
-      <img
-        as="button"
-        class="camera-icon"
-        src="img/ui_icons/camera_button.svg"
-      />
-    </div>
+    <script>
+      setTimeout(function () {
+        window.location.href = '/receipt_review.html';
+      }, 2500);
+    </script>
   </body>
 </html>
