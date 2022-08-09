@@ -33,7 +33,7 @@
      border-radius: 30px;
      display: flex; 
      align-items: center;
-     justify-content: center;
+     justify-content: space-evenly;
      text-align: center;
      position:relative;
   }
@@ -117,11 +117,11 @@
     border-bottom-left-radius:25px;
     border-bottom-right-radius:25px;
   }
-  .active-reminder-text {
+  /* .active-reminder-text {
     display:flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     padding-right:3px;
     padding-left:3px;
-  }
+  } */
