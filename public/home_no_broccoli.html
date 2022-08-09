@@ -1,0 +1,135 @@
+<!-- Starter code for Final Project Accountability!-->
+<!-- for CS160 User Interface Design & Development Summer 2022 at UC Berkeley-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- add Bootstrap 4 (from https://getbootstrap.com/docs/4.0/getting-started/download/)-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <!-- add jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!--add the Google Material Symbols Font (from https://fonts.google.com/icons ) -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <!-- add jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/css/home.css" />
+
+    <!--add the Google Material Symbols Font (from https://fonts.google.com/icons ) -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+
+  <body>
+    <div class="main-container">
+      <div class="top-header">
+        <h1>Hello, Heather</h1>
+        <a href="/setting.html"><img src="img/ui_icons/gear_icon.svg"/></a>
+      </div>
+      <button onclick="location.href='/receipt_scan.html'" class="add-receipt-btn" style="border: 0">
+        <img src="img/ui_icons/add.svg" /> Add a new receipt
+      </button>
+      <div class="banner-carousel">
+        <div class="banner">
+          <div class="banner-text">
+            <div class="banner-focus">3</div>
+            <span>of your groceries are expiring this week!</span>
+          </div>
+          <div class="banner-graphic">
+            <img src="img/graphics/banner_1.png" />
+          </div>
+        </div>
+      </div>
+      <div class="groceries-container">
+        <div class="groceries-header">
+          <div class="home-small-header">Your Groceries</div>
+          <div class="groceries-count">10</div>
+          <a href="/groceries">See all</a>
+        </div>
+        <div class="groceries-cards-container">
+          <button class="grocery-card" onclick="location.href='/broccoli.html'" style="border: 0">
+            <div class="food-img-container">
+              <img src="img/food_icons/milk.png" />
+            </div>
+            <div class="home-md-header">3 Days Left</div>
+            <div class="expiry-details expiry-red">
+              <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="50" />
+              </svg>
+              Expires on <span class="expiry-date">Aug 8</span>
+            </div>
+          </button>
+          <button class="grocery-card" onclick="location.href='/broccoli.html'" style="border: 0">
+            <div class="food-img-container">
+              <img src="img/food_icons/apple.png" />
+            </div>
+            <div class="home-md-header">5 Days Left</div>
+            <div class="expiry-details expiry-orange">
+              <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="50" />
+              </svg>
+              Expires on <span class="expiry-date">Aug 10</span>
+            </div>
+          </button>
+          <button class="grocery-card" onclick="location.href='/broccoli.html'" style="border: 0">
+            <div class="food-img-container">
+              <img src="img/food_icons/eggs.png" />
+            </div>
+            <div class="home-md-header">8 Days Left</div>
+            <div class="expiry-details expiry-green">
+              <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="50" />
+              </svg>
+              Expires on <span class="expiry-date">Aug 13</span>
+            </div>
+          </button>
+        </div>
+      </div>
+      <div class="wishlist-container">
+        <div class="groceries-header">
+          <div class="home-small-header">Your Wishlists</div>
+          <div class="groceries-count">3</div>
+          <a href="/wishlist">See all</a>
+        </div>
+        <div class="wishlist-card-container">
+          <div class="wishlist-card">
+            <div class="wishlist-week">This Week</div>
+            <div class="home-md-header">5 Items Saved</div>
+            <div class="wishlist-detail">Lettuce, Broccoli, Milk...</div>
+          </div>
+          <div class="wishlist-card">
+            <div class="wishlist-week">Next Week</div>
+            <div class="home-md-header">4 Items Saved</div>
+            <div class="wishlist-detail">Orange, Limes, Apples...</div>
+          </div>
+          <div class="wishlist-card">
+            <div class="wishlist-week">Following Week</div>
+            <div class="home-md-header">2 Items Saved</div>
+            <div class="wishlist-detail">Eggs, Spinach</div>
+          </div>
+        </div>
+      </div>
+      <div class="home navbar">
+        <div class="nav-icons">
+          <img src="img/ui_icons/home_active.svg"/>
+          <a href="/groceries_no_broccoli.html"><img src="img/ui_icons/groceries.svg"/></a>
+          <a href="/receipt.html"><img src="img/ui_icons/scan.svg" /></a>
+          <a href="/tips.html"><img src="img/ui_icons/tips.svg"/></a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
