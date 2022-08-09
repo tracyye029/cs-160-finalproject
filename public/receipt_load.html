@@ -56,13 +56,17 @@
       <div class="basket">
         <img src="img/graphics/food.png" height="40%"/>
       </div>
-      <h2 style="font-family:'Mulish', sans-serif; font-weight: bold; font-size:35px;">Processing Your Photo...</h2>
+      <h2 id="progress" style="font-family:'Mulish', sans-serif; font-weight: bold; font-size:35px;">Scanning Your Photo...</h2>
     </div>
 
     <script>
+      setInterval(function() {
+        document.getElementById("progress").innerHTML = "Processing Your Photo...";
+      }, 1800);
+
       setTimeout(function () {
         window.location.href = '/receipt_review.html';
-      }, 2500);
+      }, 4500);
     </script>
   </body>
 </html>
