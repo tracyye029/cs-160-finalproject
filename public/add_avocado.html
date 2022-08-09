@@ -14,10 +14,12 @@
 
     <!--add the Google Material Symbols Font (from https://fonts.google.com/icons ) -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" type="text/css" href="/css/style.css" />
     <link rel="stylesheet" type="text/css" href="/css/add_avocado.css" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="/js/add_avocado.js"></script>
 
   </head>
 
@@ -63,52 +65,6 @@
       </a>
     </div>
 
-    <script type="text/javascript">
-        $(document).ready(function() {
-          const minusButton = document.getElementById('minus');
-          const plusButton = document.getElementById('plus');
-          const inputQuantity = document.getElementById('input-quantity');
-
-          minusButton.addEventListener('click', event => {
-            event.preventDefault();
-            const currentValue = Number(inputQuantity.value) || 0;
-            if (currentValue > 0) {
-                inputQuantity.value = currentValue - 1;
-            }
-          });
-
-          plusButton.addEventListener('click', event => {
-            event.preventDefault();
-            const currentValue = Number(inputQuantity.value) || 0;
-            inputQuantity.value = currentValue + 1;
-          });
-
-          $("#nextweek").click(function() {
-            $("#nextweek").removeClass('inactive-date');
-            $("#nextweek").addClass("active-date");
-            $("#thisweek").removeClass('active-date');
-            $("#thisweek").addClass("inactive-date");
-            $("#lateron").removeClass('active-date');
-            $("#lateron").addClass("inactive-date");
-          });
-          $("#thisweek").click(function() {
-            $("#thisweek").removeClass('inactive-date');
-            $("#thisweek").addClass("active-date");
-            $("#nextweek").removeClass('active-date');
-            $("#nextweek").addClass("inactive-date");
-            $("#lateron").removeClass('active-date');
-            $("#lateron").addClass("inactive-date");
-          });
-          $("#lateron").click(function() {
-            $("#lateron").removeClass('inactive-date');
-            $("#lateron").addClass("active-date");
-            $("#nextweek").removeClass('active-date');
-            $("#nextweek").addClass("inactive-date");
-            $("#thisweek").removeClass('active-date');
-            $("#thisweek").addClass("inactive-date");
-          });
-      });
-    </script>
   </body>
 
   
