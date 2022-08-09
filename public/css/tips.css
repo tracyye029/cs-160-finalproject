@@ -22,7 +22,8 @@
   }
   #button1 { 
      background-color:#cc704B;
-     padding-top:7px;
+     padding-top:12px;
+     padding-bottom:12px;
      padding-left: 30px;
      padding-right: 60px;
      color: white;
