@@ -167,7 +167,7 @@
         minusButton.addEventListener('click', event => {
             event.preventDefault();
             const currentValue = Number(inputQuantity.value) || 0;
-            if (currentValue >= 0) {
+            if (currentValue > 0) {
                 inputQuantity.value = currentValue - 1;
             }
             
