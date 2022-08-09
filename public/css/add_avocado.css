@@ -169,7 +169,7 @@
     width: 90%;
   }
   .active-date {
-    background-color:#A67700;
+    background-color:#273F3A;
     border: none;
     padding: 15px 30px;  
     color: #FFFAF2;
@@ -180,13 +180,13 @@
     border-radius:35px; 
   }
   .inactive-date {
-    color:#FFFAF2;
+    color:#273F3A;
     font-size:30px;
     font-weight:800;
   }
   .add-to-wishlist {
     width: 77vw;
-    background-color: #A67700;
+    background-color: #273F3A;
     position: fixed;
     left: 50%;
     transform: translate(-50%, 0);
