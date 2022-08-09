@@ -150,7 +150,7 @@
         <div class="quantity">Quantity</div>
         <div class="quantity-field">
           <button id="minus" style="font-size:30px; font-weight:700;">−</button>
-          <input type="number" value="0" min="0" id="input-quantity">
+          <input type="number" value="0" id="input-quantity">
           <button id="plus" style="font-size:30px; font-weight:700;">+</div>
         </div>
         
@@ -160,21 +160,27 @@
     </div>
 
     <script type="text/javascript">
-        const minusButton = document.getElementById('minus');
-        const plusButton = document.getElementById('plus');
-        const inputQuantity = document.getElementById('input-quantity');
-
-        minusButton.addEventListener('click', event => {
-            event.preventDefault();
-            const currentValue = Number(inputQuantity.value) || 0;
-            inputQuantity.value = currentValue - 1;
+        $('#plus').click(function () {
+        $(this).prev().val(+$(this).prev().val() + 1);
         });
-
-        plusButton.addEventListener('click', event => {
-            event.preventDefault();
-            const currentValue = Number(inputQuantity.value) || 0;
-            inputQuantity.value = currentValue + 1;
+        $('#minus').click(function () {
+            if ($(this).next().val() > 0) $(this).next().val(+$(this).next().val() - 1);
         });
+        // const minusButton = document.getElementById('minus');
+        // const plusButton = document.getElementById('plus');
+        // const inputQuantity = document.getElementById('input-quantity');
+
+        // minusButton.addEventListener('click', event => {
+        //     event.preventDefault();
+        //     const currentValue = Number(inputQuantity.value) || 0;
+        //     inputQuantity.value = currentValue - 1;
+        // });
+
+        // plusButton.addEventListener('click', event => {
+        //     event.preventDefault();
+        //     const currentValue = Number(inputQuantity.value) || 0;
+        //     inputQuantity.value = currentValue + 1;
+        // });
     </script>
   </body>
 
