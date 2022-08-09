@@ -160,27 +160,24 @@
     </div>
 
     <script type="text/javascript">
-        $('#plus').click(function () {
-        $(this).prev().val(+$(this).prev().val() + 1);
-        });
-        $('#minus').click(function () {
-            if ($(this).next().val() > 0) $(this).next().val(+$(this).next().val() - 1);
-        });
-        // const minusButton = document.getElementById('minus');
-        // const plusButton = document.getElementById('plus');
-        // const inputQuantity = document.getElementById('input-quantity');
+        const minusButton = document.getElementById('minus');
+        const plusButton = document.getElementById('plus');
+        const inputQuantity = document.getElementById('input-quantity');
 
-        // minusButton.addEventListener('click', event => {
-        //     event.preventDefault();
-        //     const currentValue = Number(inputQuantity.value) || 0;
-        //     inputQuantity.value = currentValue - 1;
-        // });
+        minusButton.addEventListener('click', event => {
+            event.preventDefault();
+            const currentValue = Number(inputQuantity.value) || 0;
+            if (currentValue >= 0) {
+                inputQuantity.value = currentValue - 1;
+            }
+            
+        });
 
-        // plusButton.addEventListener('click', event => {
-        //     event.preventDefault();
-        //     const currentValue = Number(inputQuantity.value) || 0;
-        //     inputQuantity.value = currentValue + 1;
-        // });
+        plusButton.addEventListener('click', event => {
+            event.preventDefault();
+            const currentValue = Number(inputQuantity.value) || 0;
+            inputQuantity.value = currentValue + 1;
+        });
     </script>
   </body>
 
