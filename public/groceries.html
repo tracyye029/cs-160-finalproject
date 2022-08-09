@@ -40,7 +40,9 @@
       </div>
       <div class="groceries-nav">
         <div class="groceries-btn">Current Groceries</div>
-        <div class="wishlist-btn">Groceries Wishlist</div>
+        <a href="/wishlist.html" style="text-decoration:none;">
+          <button class="wishlist-btn">Groceries Wishlist</button>
+        </a>
       </div>
       <div class="reminder-container">
         <div class="reminder-header">
@@ -180,13 +182,13 @@
           </div>
         </div>
         <div class="grocery-list-container">
-          <div class="grocery-list-card">
+          <button class="grocery-list-card" onclick="location.href='/broccoli.html'" style="border: 0;">
             <div class="food-img-container">
               <img src="img/food_icons/broccoli.png" />
             </div>
             <div class="grocery-list-text">
-              <div class="groceries-md-header">Broccoli</div>
-              <div class="grocery-list-detail">Expiring tomorrow</div>
+              <div class="groceries-md-header" style="text-align: left;">Broccoli</div>
+              <div class="grocery-list-detail" style="text-align: left;">Expiring tomorrow</div>
             </div>
             <div id="custom-input">
               <div class="form-check">
@@ -198,7 +200,7 @@
                 />
               </div>
             </div>
-          </div>
+          </button>
           <div class="grocery-list-card">
             <div class="food-img-container">
               <img src="img/food_icons/milk.png" />
@@ -298,10 +300,10 @@
       </div>
       <div class="groceries navbar">
         <div class="nav-icons">
-          <img src="img/ui_icons/home.svg" />
-          <img src="img/ui_icons/groceries_active.svg" />
-          <img src="img/ui_icons/scan.svg" />
-          <img src="img/ui_icons/tips.svg" />
+          <a href="/home.html"><img src="img/ui_icons/home.svg"/></a>
+          <a href="/groceries.html"><img src="img/ui_icons/groceries_active.svg"/></a>
+          <a href="/receipt.html"><img src="img/ui_icons/scan.svg" /></a>
+          <a href="/tips.html"><img src="img/ui_icons/tips.svg"/></a>
         </div>
       </div>
     </div>
