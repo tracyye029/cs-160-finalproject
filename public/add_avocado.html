@@ -71,7 +71,7 @@
       border-radius: 40px;
       background: #F0F2E5;
       height: 5vh;
-      width:92%;
+      width:90%;
       display: flex;
       justify-content: flex-start;
       align-items: flex-start;
@@ -83,6 +83,32 @@
       font-weight:lighter;
       border:solid #9CAC9C;
     }
+
+    .plus-minus-input {
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    }
+
+    .plus-minus-input .input-group-field {
+    text-align: center;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    padding: 1rem;
+    }
+
+    .plus-minus-input .input-group-field::-webkit-inner-spin-button,
+    .plus-minus-input .input-group-field ::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+            appearance: none;
+    }
+
+    .plus-minus-input .input-group-button .circle {
+    border-radius: 50%;
+    padding: 0.25em 0.8em;
+    }
+
+
     </style>
   </head>
 
@@ -99,33 +125,71 @@
         <div class="product-name">Product Name</div>
         <textarea class="input-product-name">Insert product name</textarea>
       </div>
+
+      <div class="product-name-section">
+        <div class="quantity">Quantity</div>
+        <!-- Change the `data-field` of buttons and `name` of input field's for multiple plus minus buttons-->
+        <div class="input-group plus-minus-input">
+          <div class="input-group-button">
+            <button type="button" class="button hollow circle" data-quantity="minus" data-field="quantity">
+              <i class="fa fa-minus" aria-hidden="true"></i>
+            </button>
+          </div>
+            <input class="input-group-field" type="number" name="quantity" value="0">
+            <div class="input-group-button">
+              <button type="button" class="button hollow circle" data-quantity="plus" data-field="quantity">
+                <i class="fa fa-plus" aria-hidden="true"></i>
+              </button>
+            </div>
+        </div>
+
+
+      </div>
           
-        
-
-      <!-- <div class="card-container">
-        <div class="dates-card">
-          <div class="small-text">Purchase Date</div>
-          <div class="large-text">August 1, 2022</div>
-        </div>
-        <div class="dates-card">
-          <div class="small-text">Predicted Expiration Date</div>
-          <div class="large-text">August 6, 2022</div>
-        </div>
-        <div class="notes-card">
-          <div class="small-text">Notes</div>
-          <div class="large-text">10% off</div>
-        </div>
-        <div class="use-status">
-          <div class="active-use-status">Not Used</div>
-          <div class="inactive-use-status">Used</div>
-        </div>
-      </div> -->
-
 
     </div>
 
 
-    <script></script>
+    <script>
+        jQuery(document).ready(function(){
+    // This button will increment the value
+    $('[data-quantity="plus"]').click(function(e){
+        // Stop acting like a button
+        e.preventDefault();
+        // Get the field name
+        fieldName = $(this).attr('data-field');
+        // Get its current value
+        var currentVal = parseInt($('input[name='+fieldName+']').val());
+        // If is not undefined
+        if (!isNaN(currentVal)) {
+            // Increment
+            $('input[name='+fieldName+']').val(currentVal + 1);
+        } else {
+            // Otherwise put a 0 there
+            $('input[name='+fieldName+']').val(0);
+        }
+    });
+    // This button will decrement the value till 0
+    $('[data-quantity="minus"]').click(function(e) {
+        // Stop acting like a button
+        e.preventDefault();
+        // Get the field name
+        fieldName = $(this).attr('data-field');
+        // Get its current value
+        var currentVal = parseInt($('input[name='+fieldName+']').val());
+        // If it isn't undefined or its greater than 0
+        if (!isNaN(currentVal) && currentVal > 0) {
+            // Decrement one
+            $('input[name='+fieldName+']').val(currentVal - 1);
+        } else {
+            // Otherwise put a 0 there
+            $('input[name='+fieldName+']').val(0);
+        }
+    });
+});
+
+
+    </script>
   </body>
 
   
