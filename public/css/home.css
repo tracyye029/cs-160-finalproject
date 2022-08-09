@@ -50,25 +50,32 @@ h1 {
   height: 0.9em;
 }
 
-.banner {
-  width: 90vw;
+.banner-carousel {
   border-radius: 1.5rem;
   background-color: #e59262;
+  margin-bottom: 3em;
+}
+
+.banner-show {
+  display: none;
+}
+
+.banner {
+  width: 90vw;
   color: white;
   display: flex;
   height: 18vh;
   display: flex;
   justify-content: space-around;
-  margin-bottom: 3em;
 }
 
 .banner-focus {
-  font-size: 4.5vh;
+  font-size: 4.5em;
   font-weight: 800;
 }
 
 .banner-text span {
-  font-size: 2.5rem;
+  font-size: 2.3em;
   font-weight: 400;
   line-height: 120%;
 }
@@ -87,6 +94,26 @@ h1 {
 .groceries-container {
   margin-bottom: 3em;
   width: 90vw;
+}
+
+.banner-dots {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
 }
 
 .groceries-cards-container {
@@ -244,4 +271,8 @@ a:hover {
   font-weight: 400;
   font-size: 1.5em;
   color: #a67700;
+}
+
+.a_clear {
+  color: #FFFFFF;
 }
