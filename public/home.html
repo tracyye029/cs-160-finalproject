@@ -43,14 +43,31 @@
         <img src="img/ui_icons/add.svg" /> Add a new receipt
       </button>
       <div class="banner-carousel">
-        <div class="banner">
-          <div class="banner-text">
-            <div class="banner-focus">3</div>
-            <span>of your groceries are expiring this week!</span>
+        <div class="banner-show">
+          <div class="banner">
+            <div class="banner-text">
+              <div class="banner-focus">3</div>
+              <span>of your groceries are expiring this week!</span>
+            </div>
+            <div class="banner-graphic">
+              <img src="img/graphics/banner_1.png" />
+            </div>
           </div>
-          <div class="banner-graphic">
-            <img src="img/graphics/banner_1.png" />
+        </div>
+        <div class="banner-show">
+          <div class="banner">
+            <div class="banner-text">
+              <div class="banner-focus">Food Tips</div>
+              <span>Learn how to reduce food waste→</span>
+            </div>
+            <div class="banner-graphic">
+              <img src="img/graphics/banner_2.png" />
+            </div>
           </div>
+        </div>
+        <div class="banner-dots">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
         </div>
       </div>
       <div class="groceries-container">
@@ -143,5 +160,6 @@
         </div>
       </div>
     </div>
+    <script src="./js/index.js"></script>
   </body>
 </html>
