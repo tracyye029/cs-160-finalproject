@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
 
     <!-- add jQuery -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
     <script src="/vendors/jquery/jquery-3.3.1.min.js"></script>
     <script src="/vendors/jquery-ui/jquery-ui.min.js"></script>
 
@@ -223,11 +224,11 @@
         </div>
         <div class="notes-card">
           <div class="small-text">Notes</div>
-          <textarea class="large-text-area" cols="40">trees & forests</textarea>
+          <textarea class="large-text-area" cols="40">10% off</textarea>
         </div>
         <div class="use-status">
-          <div class="active-use-status">Not Used</div>
-          <div class="inactive-use-status">Used</div>
+          <div class="active-use-status" id="notused">Not Used</div>
+          <div class="inactive-use-status" id="used">Used</div>
         </div>
         <div class="delete-item">
           <a href="/delete_broccoli.html">
@@ -239,7 +240,22 @@
 
     </div>
 
-    <script></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+          $("#used").click(function() {
+              $("#used").removeClass('inactive-use-status');
+              $("#used").addClass("active-use-status");
+              $("#notused").removeClass('active-use-status');
+              $("#notused").addClass("inactive-use-status");
+          });
+          $("#notused").click(function() {
+              $("#notused").removeClass('inactive-use-status');
+              $("#notused").addClass("active-use-status");
+              $("#used").removeClass('active-use-status');
+              $("#used").addClass("inactive-use-status");
+          });
+      });
+  </script>
   </body>
 
   

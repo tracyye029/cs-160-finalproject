@@ -188,11 +188,27 @@
         padding: 1rem 1em 1rem 1em;
         flex: 0 0 auto;
     }
+    .question-box {
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width:50%;
+      height:200px;
+      position:absolute;
+      top:700px;
+      left:100px;
+      z-index:9;
+      background-color: #FFFAF2;
+      border:solid black;
+      border-radius: 20px;
+    }
+
     </style>
   </head>
 
-  <body style="font-family:'Mulish', sans-serif; background-color: #FFFAF2; opacity: 0.3;">
-    <div id="#overlay">
+  <body style="font-family:'Mulish', sans-serif; background-color: #FFFAF2; position:relative;">
+    <div id="#overlay" style="opacity: 0.3;">
       <div class="flex-container">
         <div class="header">
           <div class="back-icon">
@@ -224,7 +240,7 @@
           </div>
           <div class="notes-card">
             <div class="small-text">Notes</div>
-            <textarea class="large-text-area" cols="40">trees & forests</textarea>
+            <textarea class="large-text-area" cols="40">10% off</textarea>
           </div>
           <div class="use-status">
             <div class="active-use-status">Not Used</div>
@@ -235,11 +251,14 @@
           </div>
         </div>
   
-  
       </div>
-
     </div>
     
+    <div class="question-box">
+      <div class="question">
+        Are you sure you want to delete the item?
+      </div>
+    </div>
 
     <script></script>
   </body>
