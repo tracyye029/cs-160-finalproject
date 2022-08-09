@@ -1,0 +1,16 @@
+#input-quantity-two-digits {
+    border-radius: 40px;
+    background: #F0F2E5;
+    height: 5vh;
+    width:15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 50px;
+    flex: 0 0 auto;
+    /* margin-bottom: 2em; */
+    font-size:33px;
+    color: #40424089;
+    font-weight:lighter;
+    border:solid #9CAC9C;
+}
