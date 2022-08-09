@@ -189,17 +189,15 @@
         flex: 0 0 auto;
     }
     .question-box {
-      min-height: 100vh; /* minimum height = screen height */
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      position:absolute;
+      z-index:9;
       background-color: #9D1D1D;
     }
 
     </style>
   </head>
 
-  <body style="font-family:'Mulish', sans-serif; background-color: #FFFAF2;">
+  <body style="font-family:'Mulish', sans-serif; background-color: #FFFAF2; position:relative;">
     <div id="#overlay" style="opacity: 0.3;">
       <div class="flex-container">
         <div class="header">
