@@ -85,7 +85,11 @@
       font-weight:lighter;
       border:solid #9CAC9C;
     }
-
+    .quantity-field {
+        display:flex;
+        flex-direction:row;
+        
+    }
 
     </style>
   </head>
@@ -106,15 +110,17 @@
 
       <div class="product-name-section">
         <div class="quantity">Quantity</div>
-        <button id="minus">−</button>
-        <input type="number" value="0" id="input"/>
-        <button id="plus">+</button>
+        <div class="quantity-field">
+          <div id="minus">−</div>
+          <input type="number" value="0" id="input"/>
+          <div id="plus">+</div>
+        </div>
+        
         
       </div>
           
 
     </div>
-
 
     <script type="text/javascript">
         const minusButton = document.getElementById('minus');
