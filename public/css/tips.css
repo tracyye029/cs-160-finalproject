@@ -122,5 +122,6 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-
+    padding-right:3px;
+    padding-left:3px;
   }
