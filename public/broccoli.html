@@ -93,7 +93,7 @@
 
     .dates-card {
       border-radius: 1.5rem;
-      background: #F0F2E5;
+      background: #dce8af;
       height: 10vh;
       display: flex;
       flex-direction: column;
@@ -106,7 +106,7 @@
 
     .notes-card {
       border-radius: 1.5rem;
-      background: #F0F2E5;
+      background: #dce8af;
       height: 23vh;
       display: flex;
       flex-direction: column;
@@ -118,7 +118,7 @@
     }
 
     .use-status {
-      background: #F0F2E5;
+      background: #dce8af;
       border-radius: 1.5rem;
       height: 7vh;
       display: flex;
@@ -150,15 +150,7 @@
       font-size:40px;
       font-weight: 900;
       text-align:left;
-      border: none;
-      background-color: transparent;
-      resize: none;
-      outline: none;
-      width: 100%;
-      height: 100%; 
-      box-sizing: border-box;
     }
-
     .active-use-status {
       background-color:#273F3A;
       border: none;
@@ -193,21 +185,23 @@
         </div>
           
         <div class="broccoli-name">Broccoli</div>
-        <div class="edit-save-button">Save</div>
+        <a href="/edit_broccoli.html">
+          <div class="edit-save-button">Edit</div>
+        </a>
       </div>
 
       <div class="card-container">
         <div class="dates-card">
           <div class="small-text">Purchase Date</div>
-          <textarea class="large-text" cols="20">August 1, 2022</textarea>
+          <div class="large-text">August 1, 2022</div>
         </div>
         <div class="dates-card">
           <div class="small-text">Predicted Expiration Date</div>
-          <textarea class="large-text" cols="20">August 6, 2022</textarea>
+          <div class="large-text">August 6, 2022</div>
         </div>
         <div class="notes-card">
           <div class="small-text">Notes</div>
-          <textarea class="large-text" cols="40">trees & forests</textarea>
+          <div class="large-text">trees & forests</div>
         </div>
         <div class="use-status">
           <div class="active-use-status">Not Used</div>
