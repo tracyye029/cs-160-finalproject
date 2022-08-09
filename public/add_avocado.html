@@ -75,7 +75,7 @@
       width:90%;
       display: flex;
       justify-content: flex-start;
-      align-items: flex-start;
+      align-items: center;
       padding: 1.5rem 1em;
       flex: 0 0 auto;
       /* margin-bottom: 2em; */
@@ -100,14 +100,21 @@
       text-align:left;
       padding-bottom:20px;
     }
+    .quantity-field {
+      display:flex;
+      flex-direction:row;
+      align-items: center;
+      justify-content: flex-start;
+      width:100%;
+    }
     #input-quantity {
       border-radius: 40px;
       background: #F0F2E5;
       height: 5vh;
-      width:30%;
+      width:15%;
       display: flex;
-      justify-content: flex-start;
-      align-items: flex-start;
+      justify-content: center;
+      align-items: center;
       padding: 1.5rem 1em;
       flex: 0 0 auto;
       /* margin-bottom: 2em; */
@@ -116,13 +123,7 @@
       font-weight:lighter;
       border:solid #9CAC9C;
     }
-    .quantity-field {
-      display:flex;
-      flex-direction:row;
-      align-items: center;
-      justify-content: flex-start;
-      width:100%;
-    }
+    
     button {
       outline: none;
       background: transparent;
@@ -170,7 +171,6 @@
             if (currentValue > 0) {
                 inputQuantity.value = currentValue - 1;
             }
-            
         });
 
         plusButton.addEventListener('click', event => {
