@@ -120,5 +120,6 @@
 
   #white-gear  {
     position:absolute;
-    margin-top:1px;
+    top:1px;
+    right:1px;
   }
