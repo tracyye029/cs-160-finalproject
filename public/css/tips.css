@@ -3,16 +3,13 @@
     flex-direction: column;
     flex-wrap: nowrap;
     overflow-x: hidden;
-    /* background-color: pink; */
   }
   .foodtips {
      display: flex;
      justify-content: center;
      font-weight: bold;
-     padding-top: 100px;
-     /* background-color: antiquewhite; */
-     /* padding:1rem; */
-     height:170px;
+     padding-top: 200px;
+     height:180px;
  }
   .reminder-button {
      padding:2px 60px 30px;
