@@ -1,48 +1,59 @@
 .flex-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    overflow-x: hidden;
-    position:absolute;
-    margin-top:500px;
-    align-items: center;
-    justify-content: center;
-    /* background-color: pink; */
-  }
-  .header-img {
-    width: 100%;
-    height: 600px;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/foodtips/grocery4.jpg');
-    backdrop-filter: blur(5px);
-    background-size: 115%;
-    background-position: 17% 55%;
-    overflow: hidden;
-    position:relative;
-    display:flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-  .back-icon {
-    position: absolute;
-    top:63px;
-    left:60px;
-  }
-  .share-icon {
-    position: absolute;
-    top:60px;
-    right:60px;
-  }
-  .title {
-    padding-left:50px;
-    padding-right:50px;
-    padding-top:180px;
-    text-align: center;
-  }
-  .stack-top {
-    background-color:#FFFAF2;
-    width:80%;
-    padding:40px 50px;
-    border-radius:25px;
-    margin-bottom:50px;
-  }
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+  position:absolute;
+  margin-top:500px;
+  align-items: center;
+  justify-content: center;
+  /* background-color: pink; */
+}
+.header-img {
+  width: 100%;
+  height: 600px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/foodtips/grocery4.jpg');
+  backdrop-filter: blur(5px);
+  background-size: 115%;
+  background-position: 17% 55%;
+  overflow: hidden;
+  position:relative;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.back-icon {
+  position: absolute;
+  top:63px;
+  left:60px;
+}
+.share-icon {
+  position: absolute;
+  top:60px;
+  right:60px;
+}
+.title {
+  padding-left:50px;
+  padding-right:50px;
+  padding-top:180px;
+  text-align: center;
+}
+.stack-top {
+  background-color:#FFFAF2;
+  width:80%;
+  padding:40px 50px;
+  border-radius:25px;
+  margin-bottom:50px;
+}
+h1 {
+  font-size: 2.7em;
+  font-weight: 800;
+}
+p {
+  font-size: 2.2em;
+  color: #3F3F3F;
+  text-align: left;
+  font-weight: 500;
+  margin: 0px;
+}
