@@ -34,7 +34,7 @@
   </head>
 
   <body>
-    <div class="main-container">
+    <div class="main-container" style="opacity: 0.3;">
         <div class="top-header">
             <div class="back-icon">
                 <a href="/receipt_scan.html">
@@ -77,27 +77,24 @@
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="options">
-        <button onclick="location.href='/delete_receipt.html'" class="option-button-delete">Delete Receipt</button>
-        <button onclick="location.href='/groceries.html'" class="option-button-add">Add To My Groceries</button>
-    </div>
-
+        <div class="options">
+          <button onclick="location.href='/delete_receipt.html'" class="option-button-delete">Delete Receipt</button>
+          <button onclick="location.href='/groceries.html'" class="option-button-add">Add To My Groceries</button>
+        </div>
+    </div>  
+      
     <div class="question-box">
-        <div class="question" style="font-size:40px; font-weight:900;">
-          Are you sure you want to delete your receipt?
-        </div>
-        
-        <div class="button-container">
-          <a href="/home.html">
-            <div class="delete-button">Delete</div>
-          </a>
-          <a href="/receipt_review.html">
-            <div class="cancel-button">Cancel</div>
-          </a>
-        </div>
-        
+      <div class="question" style="font-size:40px; font-weight:900;">
+        Are you sure you want to delete your receipt?
+      </div>
+      
+      <div class="button-container">
+        <a href="/home.html">
+          <div class="delete-button">Delete</div>
+        </a>
+        <a href="/receipt_review.html">
+          <div class="cancel-button">Cancel</div>
+        </a>
       </div>
   </body>
 </html>
