@@ -44,15 +44,71 @@
       <h2 style="margin-top: 5%;">General Reminders</h2>
       <div class="section">
         <h3>General settings of when push notifications will be sent to you.</h3>
-        <div class="item">
+        <div class="gen-item">
           <p>Reminder</p>
+          <select name="expiry" id="expiry-dropdown">
+            <option value="1 day before expiry">1 day before expiry</option>
+            <option value="2 day before expiry">2 days before expiry</option>
+            <option value="3 day before expiry">3 days before expiry</option>
+            <option value="4 day before expiry">4 days before expiry</option>
+            <option value="5 day before expiry">5 days before expiry</option>
+            <option value="6 day before expiry">6 days before expiry</option>
+            <option value="1 week before expiry" selected>1 week before expiry</option>
+          </select>
         </div>
-        <div class="item">
+        <div class="gen-item">
           <p>Time</p>
-        </div>
-        <div class="item">
-            <p>Frequency</p>
+          <div class="time">
+            <div class="hour">
+                <div class="numbers">01</div>
+                <div class="numbers">02</div>
+                <div class="numbers">03</div>
+                <div class="numbers">04</div>
+                <div class="numbers">05</div>
+                <div class="numbers">06</div>
+                <div class="numbers">07</div>
+                <div class="numbers">08</div>
+                <div class="numbers">09</div>
+                <div class="numbers">10</div>
+                <div class="numbers">11</div>
+                <div class="numbers">12</div>
+            </div>
+            <p class="colon">:</p>
+            <div class="hour">
+                <div class="numbers">0</div>
+                <div class="numbers">1</div>
+                <div class="numbers">2</div>
+                <div class="numbers">3</div>
+                <div class="numbers">4</div>
+                <div class="numbers">5</div>
+            </div>
+            <div class="hour">
+                <div class="numbers">0</div>
+                <div class="numbers">1</div>
+                <div class="numbers">2</div>
+                <div class="numbers">3</div>
+                <div class="numbers">4</div>
+                <div class="numbers">5</div>
+                <div class="numbers">6</div>
+                <div class="numbers">7</div>
+                <div class="numbers">8</div>
+                <div class="numbers">9</div>
+            </div>
+            <select name="expiry" id="expiry-dropdown" style="padding-top: 0.2vh;">
+                <option value="am" selected>am</option>
+                <option value="pm">pm</option>
+            </select>
           </div>
+        </div>
+        <div class="gen-item">
+            <p>Frequency</p>
+            <select name="expiry" id="expiry-dropdown" style="text-align: right;">
+                <option value="everyday" selected>everyday</option>
+                <option value="every other day">every 2 days</option>
+                <option value="twice a week">twice a week</option>
+                <option value="once a week">once a week</option>
+            </select>
+        </div>
       </div>
       <h2>Specific Reminders</h2>
       <div class="section">
