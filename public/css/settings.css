@@ -49,6 +49,19 @@ p {
     margin: 0px;
 }
 
+textarea {
+    font-size: 2.1em;
+    color: #FFFAF2;
+    text-align: left;
+    font-weight: 500;
+    margin: 0px;
+    width: 100%; 
+    background-color: transparent; 
+    border: none;
+    height: 2.5vh;
+    outline: none;
+}
+
 .settings-header {
     position: -webkit-sticky;
     position: sticky;
