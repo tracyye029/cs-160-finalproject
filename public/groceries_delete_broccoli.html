@@ -42,13 +42,13 @@
         <div class="groceries-btn">Current Groceries</div>
         <div class="wishlist-btn">Groceries Wishlist</div>
       </div>
-      <div class="reminder-container">
+      <div class="reminder-container" id="all-reminders">
         <div class="reminder-header">
           <div class="reminder-header-text">
             <div class="groceries-small-header">Reminders</div>
             <img src="img/ui_icons/gear_icon.svg" />
           </div>
-          <div as="button" class="clear-btn">Clear All</div>
+          <button class="clear-btn" onClick="hide_reminders()" style="border:none; outline:none;">Clear All</button>
         </div>
         <div class="grocery-list-card" style="background-color: #e59262">
           <div class="food-img-container">
@@ -286,5 +286,12 @@
         </div>
       </div>
     </div>
+
+    <script>
+      function hide_reminders(){
+        var element = document.getElementById("all-reminders");
+        element.style.display = "none";
+      }
+    </script>
   </body>
 </html>
