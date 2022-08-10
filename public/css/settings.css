@@ -10,7 +10,7 @@
 
 h1 {
     font-size: 2.5em;
-    color: #404240;
+    color: #3F3F3F;
     text-align: center;
     font-weight: 900;
 }
@@ -35,7 +35,7 @@ h3 {
 
 h4 {
     font-size: 1.8em;
-    color: #FFFAF2;
+    color: #3F3F3F;
     text-align: left;
     font-weight: 500;
     margin: 0px;
@@ -43,7 +43,7 @@ h4 {
 
 p {
     font-size: 2.1em;
-    color: #FFFAF2;
+    color: #3F3F3F;
     text-align: left;
     font-weight: 500;
     margin: 0px;
@@ -51,7 +51,7 @@ p {
 
 textarea {
     font-size: 2.1em;
-    color: #FFFAF2;
+    color: #3F3F3F;
     text-align: left;
     font-weight: 500;
     margin: 0px;
@@ -90,7 +90,7 @@ textarea {
 }
 
 .item {
-    background-color: #9CAC9C;
+    background-color: #DCE8AF;
     border-radius: 15px;
     width: 100%;
     padding: 1.2em 1.5em;
@@ -102,7 +102,7 @@ textarea {
 }
 
 .gen-item {
-    background-color: #9CAC9C;
+    background-color: #DCE8AF;
     border-radius: 15px;
     width: 100%;
     padding: 1.2em 1.5em;
@@ -113,10 +113,10 @@ textarea {
     flex-direction: row;
 }
 #expiry-dropdown {
-    background-color: #9CAC9C;
+    background-color: #DCE8AF;
     border: none;
     font-size: 2.1em;
-    color: #FFFAF2;
+    color: #3F3F3F;
     text-align: left;
     font-weight: 500;
     margin: 0px;
@@ -142,7 +142,7 @@ textarea {
 
 .colon {
     font-size: 2.1em;
-    color: #FFFAF2;
+    color: #3F3F3F;
     scroll-snap-align: start;
 }
 
@@ -152,11 +152,25 @@ textarea {
     justify-content: center;
     height: 2vh;
     font-size: 2.1em;
-    color: #FFFAF2;
+    color: #3F3F3F;
     scroll-snap-align: start;
     padding-top: 0.7vh;
 }
 
 .hour::-webkit-scrollbar {
     display: none;
+}
+
+.object {
+    display:flex;
+    flex-direction:row;
+    gap: 2vw;
+}
+
+.img-option {
+    margin-top: 0.2vh;
+}
+
+.forward-option {
+    margin-top: 0.6vh;
 }
