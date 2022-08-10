@@ -18,8 +18,9 @@
 
     <link rel="stylesheet" type="text/css" href="/css/style.css" />
     <link rel="stylesheet" type="text/css" href="/css/add_avocado.css" />
+    <link rel="stylesheet" type="text/css" href="/css/add_suggested_item.css" />
 
-    <script type="text/javascript" src="/js/add_avocado.js"></script>
+    <script type="text/javascript" src="/js/add_suggested_item.js"></script>
 
   </head>
 
@@ -29,26 +30,26 @@
         <div class="back-icon">
           <img src="/img/ui_icons/left.png" width="80px" height="80px">
         </div>
-        <div class="title">Add An Item</div> 
+        <div class="title">Add A Suggested Item</div> 
       </div>
       
       <div class="product-name-section">
         <div class="product-name">Product Name</div>
-        <textarea class="input-product-name">Insert product name</textarea>
+        <textarea class="input-product-name">Milk</textarea>
       </div>
 
       <div class="quantity-section">
-        <div class="quantity">Quantity</div>
+        <div class="quantity">Quantity<span style="font-size:30px; color:#40424089; font-weight:lighter;">&nbsp(fl oz)</span></div>
         <div class="quantity-field">
           <button id="minus" style="font-size:30px; font-weight:700;">−</button>
-          <input type="number" value="0" id="input-quantity">
+          <input type="number" value="64" id="input-quantity-two-digits">
           <button id="plus" style="font-size:30px; font-weight:700;">+</div>
         </div> 
       </div>
 
       <div class="notes-section">
         <div class="notes-title">Notes</div>
-        <textarea class="input-notes">Add additional notes here</textarea>
+        <textarea class="input-notes">Your recent purchases of 2 gallon milk have expired twice in a row.</textarea>
       </div>
 
       <div class="desirable-date-section">
@@ -60,7 +61,7 @@
         </div>
       </div>
       
-      <a href="/wishlist_add_avocado.html">
+      <a href="/wishlist_add_milk.html">
         <div class="add-to-wishlist">Add to My Wishlist</div>
       </a>
     </div>

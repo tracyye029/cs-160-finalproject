@@ -44,28 +44,10 @@
         </a>
         <div class="wishlist-btn">Groceries Wishlist</div>
       </div>
-      <button class="add-item-btn" onclick="location.href='/add_avocado.html'" style="border: 0;">
-        <img src="img/ui_icons/add.svg" /> Add a new item
-      </button>
-      <div class="suggestions-container">
-        <div class="groceries-header">
-          <div class="home-small-header">Suggestions</div>
-          <div class="groceries-count">3</div>
-          <a href="/suggestions">See all</a>
-        </div>
-        <div class="grocery-list-card" style="background-color: #e59262">
-          <div class="grocery-list-text" style="width: 85%; padding-left: 2em">
-            <div class="groceries-md-header" style="color: white">
-              Add 64 fl oz milk this week
-            </div>
-            <div class="grocery-list-detail" style="color: white">
-              Your recent purchases of 2 gallon milk have expired twice in a
-              row.
-            </div>
-          </div>
-          <img src="img/ui_icons/suggestion_add.svg" style="height: 4em" />
-        </div>
+      <div as="button" class="add-item-btn">
+        <img src="img/ui_icons/add.svg" /> Add a new receipt
       </div>
+    
       <div class="wishlist-container">
         <div class="groceries-header"></div>
         <div class="grocery-list-container">
@@ -89,7 +71,7 @@
             </div>
             <div class="grocery-list-text">
               <div class="groceries-md-header">Carrots</div>
-              <div class="grocery-list-detail">Quantity: 3</div>
+              <div class="grocery-list-detail">Quantity: 5</div>
             </div>
           </div>
           <div class="groceries-header" style="margin-top: 2em">
@@ -98,6 +80,15 @@
             <a href="/suggestions">See all</a>
           </div>
           <div class="grocery-list-card">
+            <div class="food-img-container">
+              <img src="img/food_icons/avocado.png" />
+            </div>
+            <div class="grocery-list-text">
+              <div class="groceries-md-header">Avocado</div>
+              <div class="grocery-list-detail">Quantity: 3</div>
+            </div>
+          </div>
+          <div class="grocery-list-card" onclick="location.href='/edit_apple.html'" style="border:0;">
             <div class="food-img-container">
               <img src="img/food_icons/apple.png" />
             </div>
