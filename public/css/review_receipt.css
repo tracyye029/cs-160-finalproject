@@ -141,8 +141,8 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
     background-color: #FFFAF2;
     border:solid black;
     border-radius: 20px;
