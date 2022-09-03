@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 80%;
+    width: 90%;
     font-family:'Mulish', sans-serif;
     background-color: #FFFAF2;
     margin: 0px;
@@ -12,15 +12,15 @@ h1 {
     font-size: 2.5em;
     color: #3F3F3F;
     text-align: center;
-    font-weight: 900;
+    font-weight: 800;
 }
 
 h2 {
     font-size: 2.7em;
     color: #3F3F3F;
     text-align: left;
-    font-weight: 900;
-    margin-left: 10%;
+    font-weight: 800;
+    margin-left: 5%;
     margin-top: 7%;
 }
 
@@ -42,7 +42,7 @@ h4 {
 }
 
 p {
-    font-size: 2.1em;
+    font-size: 2.2em;
     color: #3F3F3F;
     text-align: left;
     font-weight: 500;
@@ -82,10 +82,10 @@ textarea {
 .section {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 90%;
     justify-content: center;
     margin: 0px;
-    margin-left: 10%;
+    margin-left: 5%;
     gap: 0.75em;
 }
 
@@ -98,7 +98,7 @@ textarea {
 }
 
 .back-icon {
-    margin-left:8%;
+    margin-left:3%;
 }
 
 .gen-item {
